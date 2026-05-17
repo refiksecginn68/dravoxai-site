@@ -889,6 +889,51 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   opacity: 0;
 }
 
+/* ─── Nav dropdown ───────────────────────────────────────────── */
+.nav__dropdown-wrap {
+  position: relative;
+}
+
+.nav__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  list-style: none;
+  padding: 6px;
+  min-width: 180px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-4px);
+  transition: opacity 0.18s, transform 0.18s;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.nav__dropdown-wrap:hover .nav__dropdown,
+.nav__dropdown-wrap:focus-within .nav__dropdown {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav__dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(236, 233, 226, 0.75);
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.nav__dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--fg);
+}
+
 /* ─── Focus styles ───────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--accent);
