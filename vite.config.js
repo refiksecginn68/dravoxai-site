@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: '/',
   build: {
     target: 'es2022',
     minify: 'esbuild',
