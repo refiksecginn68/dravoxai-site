@@ -3,27 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Dravoxai — Yapay Zeka Stüdyosu</title>
-  <meta name="description" content="Dravoxai, işletmelerin yapay zeka ile gerçek rekabet avantajı elde etmesine yardımcı olan bir AI stüdyosudur. Özel AI geliştirme, danışmanlık ve otomasyon." />
-  <meta property="og:title" content="Dravoxai — Yapay Zeka Stüdyosu" />
-  <meta property="og:description" content="Özel AI geliştirme, danışmanlık ve otomasyon. Geleceği bugünden inşa ediyoruz." />
-  <meta property="og:image" content="./images/og-image.jpg" />
+  <title>Dravoxai — İşletmenize Özel Yapay Zeka Çözümleri</title>
+  <meta name="description" content="Türkiye'nin AI otomasyon stüdyosu. Sesli AI chatbot, WhatsApp otomasyonu, çok kanallı mesajlaşma, n8n entegrasyonları. İşletmenize özel yapay zeka çözümleri." />
+  <meta name="keywords" content="yapay zeka çözümleri, ai otomasyon, whatsapp chatbot, n8n türkiye, ai ajansı, otomasyon ajansı" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dravoxai" />
+  <meta name="language" content="Turkish" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dravoxai — İşletmenize Özel Yapay Zeka Çözümleri" />
+  <meta property="og:description" content="Türkiye'nin AI otomasyon stüdyosu. Sesli AI, WhatsApp botları, n8n otomasyonları." />
+  <meta property="og:image" content="https://dravoxai.com/og-image.jpg" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dravoxai.com" />
+  <meta property="og:url" content="https://dravoxai.com/" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Dravoxai" />
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://dravoxai.com" />
+  <meta name="twitter:title" content="Dravoxai — İşletmenize Özel Yapay Zeka Çözümleri" />
+  <meta name="twitter:description" content="Türkiye'nin AI otomasyon stüdyosu." />
+  <link rel="canonical" href="https://dravoxai.com/" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Dravoxai",
+    "alternateName": "Dravox AI",
     "url": "https://dravoxai.com",
-    "email": "info@dravoxai.com",
+    "logo": "https://dravoxai.com/logo.png",
+    "description": "Türkiye'nin AI otomasyon stüdyosu. İşletmelere özel yapay zeka çözümleri.",
     "telephone": "+905301139021",
-    "description": "Yapay zeka geliştirme, danışmanlık ve otomasyon stüdyosu.",
-    "areaServed": "Worldwide",
-    "serviceType": ["Artificial Intelligence Development", "AI Consulting", "Process Automation"]
+    "email": "info@dravoxai.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pınar, 4015. Sk.",
+      "addressLocality": "Aksaray",
+      "addressRegion": "Aksaray",
+      "postalCode": "68100",
+      "addressCountry": "TR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Dravoxai",
+    "url": "https://dravoxai.com",
+    "inLanguage": "tr-TR",
+    "publisher": {"@type": "Organization", "name": "Dravoxai"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dravoxai",
+    "image": "https://dravoxai.com/og-image.jpg",
+    "telephone": "+905301139021",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pınar, 4015. Sk.",
+      "addressLocality": "Aksaray",
+      "addressCountry": "TR"
+    },
+    "priceRange": "₺₺₺",
+    "areaServed": "TR",
+    "serviceType": ["AI Otomasyon", "Yapay Zeka Çözümleri", "WhatsApp Otomasyon", "Sesli AI", "n8n Otomasyon", "Web Tasarım"]
   }
   </script>
   <link rel="stylesheet" href="/src/styles.css" />
@@ -45,20 +91,20 @@
   <header class="nav" role="banner">
     <div class="nav__row">
       <a href="#" class="nav__brand" aria-label="Ana Sayfa">
-        <img class="nav__logo" src="./logo.png" alt="Logo" height="32" onerror="this.style.display='none'" />
+        <img class="nav__logo" src="./logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
       </a>
       <nav class="nav__center" aria-label="Ana Menü">
         <ul class="nav__links">
           <li><a href="#manifesto" class="nav__btn">Hakkımızda</a></li>
+          <li><a href="#hizmetler" class="nav__btn">Hizmetler</a></li>
           <li class="nav__dropdown-wrap">
             <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-              Hizmetler
+              Sektörler
               <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
                 <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </button>
             <ul class="nav__dropdown" role="menu">
-              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">Tüm Hizmetler</a></li>
               <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
               <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
             </ul>
@@ -88,6 +134,7 @@
         <div class="hero__main">
           <h1 class="hero__headline">
             <span class="hero__headline-plain">Dravox </span><span class="hero__headline-gradient">AI</span>
+            <span class="visually-hidden">— İşletmenize Özel Yapay Zeka ve Otomasyon Çözümleri</span>
           </h1>
           <p class="hero__subtitle">İşletmenize özel yapay zeka çözümleri —<br>otomasyon, entegrasyon ve dönüşüm.</p>
           <a href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" class="hero__cta-btn">İletişime Geç</a>
@@ -177,23 +224,25 @@
             <li class="practice__item reveal-text">
               <span class="practice__num">001</span>
               <div class="practice__content">
-                <span class="practice__name">Sesli AI Chat Botları</span>
+                <h3 class="practice__name">Sesli AI Chat Botları</h3>
                 <span class="practice__desc">7/24 konuşan, öğrenen ve dönüştüren yapay zeka asistanları. Müşteriyle doğal diyalog, gerçek zamanlı yanıt, çok dilli destek.</span>
+                <a href="/sektorler/oteller-icin-ai" class="practice__sector-link">Oteller için Sesli AI →</a>
               </div>
               <div class="practice__tags"><span>Ses</span><span>LLM</span><span>7/24</span></div>
             </li>
             <li class="practice__item reveal-text">
               <span class="practice__num">002</span>
               <div class="practice__content">
-                <span class="practice__name">Çok Kanallı Mesajlaşma Paneli</span>
+                <h3 class="practice__name">Çok Kanallı Mesajlaşma Paneli</h3>
                 <span class="practice__desc">WhatsApp, Instagram, Messenger, Telegram, TikTok DM ve e-postanızı tek ekrandan yönetin. 0 kaçan mesaj, 3× daha fazla dönüşüm.</span>
+                <a href="/sektorler/restoranlar-icin-ai" class="practice__sector-link">Restoranlar için Çözüm →</a>
               </div>
               <div class="practice__tags"><span>WhatsApp</span><span>Instagram</span><span>Panel</span></div>
             </li>
             <li class="practice__item reveal-text">
               <span class="practice__num">003</span>
               <div class="practice__content">
-                <span class="practice__name">Kusursuz Web Tasarımı</span>
+                <h3 class="practice__name">Kusursuz Web Tasarımı</h3>
                 <span class="practice__desc">Dönüşüm odaklı, hızlı ve modern kurumsal web siteleri. Markanızın dijital yüzü — sıfırdan, özelleştirilmiş.</span>
               </div>
               <div class="practice__tags"><span>UI/UX</span><span>SEO</span><span>Deploy</span></div>
@@ -201,7 +250,7 @@
             <li class="practice__item reveal-text">
               <span class="practice__num">004</span>
               <div class="practice__content">
-                <span class="practice__name">Akıllı Otomasyon Sistemleri</span>
+                <h3 class="practice__name">Akıllı Otomasyon Sistemleri</h3>
                 <span class="practice__desc">Tekrarlayan süreçleri otomatikleştirin, zaman ve emek tasarrufu sağlayın. Workflow, RPA ve API entegrasyonları.</span>
               </div>
               <div class="practice__tags"><span>Workflow</span><span>RPA</span><span>API</span></div>
@@ -209,7 +258,7 @@
             <li class="practice__item reveal-text">
               <span class="practice__num">005</span>
               <div class="practice__content">
-                <span class="practice__name">Kapsamlı CRM Altyapıları</span>
+                <h3 class="practice__name">Kapsamlı CRM Altyapıları</h3>
                 <span class="practice__desc">Müşteri verilerini kazanca dönüştürün. Özel CRM kurulumu, entegrasyonu ve otomasyon sistemi.</span>
               </div>
               <div class="practice__tags"><span>CRM</span><span>Veri</span><span>Analitik</span></div>

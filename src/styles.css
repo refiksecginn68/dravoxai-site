@@ -889,6 +889,36 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   opacity: 0;
 }
 
+/* ─── Visually hidden (SEO / a11y) ──────────────────────────── */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ─── Practice sector link ───────────────────────────────────── */
+.practice__sector-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+
+.practice__sector-link:hover {
+  opacity: 1;
+}
+
 /* ─── Nav dropdown ───────────────────────────────────────────── */
 .nav__dropdown-wrap {
   position: relative;
