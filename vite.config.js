@@ -13,6 +13,7 @@ export default defineConfig({
         restoranlar:       'sektorler/restoranlar-icin-ai/index.html',
         blog:              'blog/index.html',
         blogOteller2026:   'blog/oteller-icin-ai-chatbot-rehberi-2026/index.html',
+        blogBooking:       'blog/otel-booking-komisyonundan-kurtulma/index.html',
       },
       output: { manualChunks: { three: ['three'], gsap: ['gsap'] } }
     }
