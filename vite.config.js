@@ -11,6 +11,7 @@ export default defineConfig({
         main:              'index.html',
         oteller:           'sektorler/oteller-icin-ai/index.html',
         restoranlar:       'sektorler/restoranlar-icin-ai/index.html',
+        eticaret:          'sektorler/eticaret-icin-ai/index.html',
         blog:              'blog/index.html',
         blogOteller2026:   'blog/oteller-icin-ai-chatbot-rehberi-2026/index.html',
         blogBooking:       'blog/otel-booking-komisyonundan-kurtulma/index.html',
