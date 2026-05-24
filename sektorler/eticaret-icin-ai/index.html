@@ -75,7 +75,7 @@
         "name": "Trendyol, Hepsiburada gibi pazar yerleriyle entegre olur mu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Evet. Trendyol Açık API, Hepsiburada Marketplace API, N11, GittiGidiyor, Çiçeksepeti — hepsi destekleniyor. Mesajlar, siparişler, stok güncelleme — tümü tek panelde. Shopify, WooCommerce, IdeaSoft, T-Soft gibi kendi e-ticaret panelleriniz için de tam entegrasyon."
+          "text": "Evet. Trendyol Açık API, Hepsiburada Marketplace API, N11, GittiGidiyor, Çiçeksepeti — hepsi destekleniyor. Shopify, WooCommerce, IdeaSoft, T-Soft için de tam entegrasyon."
         }
       },
       {
@@ -83,7 +83,7 @@
         "name": "Müşteriye yanlış bilgi verirse?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AI sınırlarını biliyor. Stok bilgisini canlı sistemden çekiyor — yanlış olamaz. Karmaşık iade/şikayet durumlarında otomatik insana yönlendiriyor. Yanlış cevap riski %1'in altında. Her konuşma panelden izleniyor, gerektiğinde anında müdahale edebiliyorsunuz."
+          "text": "AI sınırlarını biliyor. Stok bilgisini canlı sistemden çekiyor. Karmaşık iade/şikayet durumlarında otomatik insana yönlendiriyor. Yanlış cevap riski yüzde 1'in altında."
         }
       },
       {
@@ -91,7 +91,7 @@
         "name": "Kargo entegrasyonu hangi şirketlerle var?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Aras, Yurtiçi, MNG, PTT, Sürat, UPS, FedEx, DHL — tüm büyük kargo şirketleri. Sipariş numarasından otomatik takip yapıyor, müşteriye anlık konum bildiriyor. Kargo şirketinin sitesine müşterinin gitmesine gerek kalmıyor."
+          "text": "Aras, Yurtiçi, MNG, PTT, Sürat, UPS, FedEx, DHL — tüm büyük kargo şirketleri entegre. Sipariş numarasından otomatik takip yapıyor."
         }
       },
       {
@@ -99,7 +99,7 @@
         "name": "Aylık 50 sipariş alıyorum, bu çözüm bana büyük gelir mi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Düşük hacimli işletmeler için temel paket (sadece WhatsApp + sipariş takip) 12.000₺'den başlıyor. Ay ortalama 1.500₺ maliyet karşılığında 1 yarı zamanlı müşteri hizmetleri elemanından kurtuluyorsunuz. ROI 2-4 ayda çıkıyor."
+          "text": "Temel paket 12.000₺'den başlıyor. Ay ortalama 1.500₺ maliyet karşılığında 1 yarı zamanlı müşteri hizmetleri elemanından kurtuluyorsunuz. ROI 2-4 ayda çıkıyor."
         }
       },
       {
@@ -115,7 +115,7 @@
         "name": "Ürün kataloğum sürekli değişiyor, AI takip edebilir mi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Evet, ürün katalogunuz panelinizde güncellendiğinde AI otomatik öğreniyor. Fiyat değişti — bot yeni fiyatı veriyor. Yeni varyant eklendi — bot biliyor. Stok bitti — bot 'şu an stokta yok ama [tarih] tarihinde geliyor' diyor."
+          "text": "Evet, ürün katalogunuz panelinizde güncellendiğinde AI otomatik öğreniyor. Fiyat değişti — bot yeni fiyatı veriyor. Stok bitti — bot biliyor."
         }
       },
       {
@@ -186,38 +186,36 @@
     <section class="otel-hero" id="hero" aria-label="Hero">
       <div class="otel-hero__bg" aria-hidden="true"></div>
 
-      <!-- Hero SVG Illustration -->
+      <!-- Hero SVG Illustration: Kutu + GPS + WhatsApp + Kamyon -->
       <div class="otel-hero__illustration" aria-hidden="true">
         <svg width="320" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Package/box -->
-          <rect x="100" y="130" width="70" height="60" rx="4" stroke="rgba(236,233,226,0.18)" stroke-width="1.5"/>
-          <line x1="100" y1="155" x2="170" y2="155" stroke="rgba(236,233,226,0.12)" stroke-width="1"/>
-          <path d="M118 130 L118 155" stroke="rgba(236,233,226,0.1)" stroke-width="1"/>
-          <path d="M152 130 L152 155" stroke="rgba(236,233,226,0.1)" stroke-width="1"/>
-          <rect x="120" y="138" width="30" height="10" rx="2" stroke="rgba(236,233,226,0.2)" stroke-width="1"/>
+          <!-- Shopping box body -->
+          <rect x="100" y="120" width="120" height="100" rx="6" stroke="rgba(236,233,226,0.18)" stroke-width="1.5"/>
+          <path d="M100 148 L220 148" stroke="rgba(236,233,226,0.12)" stroke-width="1"/>
+          <!-- Box lid -->
+          <path d="M92 120 L228 120 L216 100 L104 100 Z" stroke="rgba(236,233,226,0.2)" stroke-width="1.5"/>
+          <line x1="160" y1="100" x2="160" y2="120" stroke="rgba(236,233,226,0.15)" stroke-width="1"/>
           <!-- GPS pin on box -->
-          <circle cx="195" cy="120" r="12" stroke="#D4B896" stroke-width="1.5"/>
-          <circle cx="195" cy="118" r="5" stroke="#D4B896" stroke-width="1.2"/>
-          <line x1="195" y1="132" x2="195" y2="145" stroke="#D4B896" stroke-width="1.5"/>
-          <path d="M188 145 Q195 155 202 145" stroke="#D4B896" stroke-width="1.2" stroke-linecap="round"/>
-          <!-- Dashed path from box to pin -->
-          <path d="M170 160 Q185 160 185 140" stroke="rgba(212,184,150,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <circle cx="160" cy="162" r="10" stroke="#D4B896" stroke-width="1.5"/>
+          <path d="M160 172 L160 180" stroke="#D4B896" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="160" cy="160" r="3" fill="#D4B896" opacity="0.6"/>
           <!-- WhatsApp chat bubble -->
-          <rect x="42" y="50" width="100" height="65" rx="10" stroke="#D4B896" stroke-width="1.5" opacity="0.85"/>
-          <path d="M52 115 L42 134 L62 115" stroke="#D4B896" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
-          <!-- Chat lines inside -->
-          <line x1="56" y1="70" x2="128" y2="70" stroke="#D4B896" stroke-width="1" opacity="0.55"/>
-          <line x1="56" y1="83" x2="118" y2="83" stroke="#D4B896" stroke-width="1" opacity="0.4"/>
-          <line x1="56" y1="96" x2="105" y2="96" stroke="#D4B896" stroke-width="1" opacity="0.28"/>
-          <!-- Shopping cart -->
-          <path d="M220 55 L228 55 L238 85 L270 85" stroke="rgba(236,233,226,0.35)" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="244" cy="95" r="5" stroke="rgba(212,184,150,0.6)" stroke-width="1.2"/>
-          <circle cx="264" cy="95" r="5" stroke="rgba(212,184,150,0.6)" stroke-width="1.2"/>
-          <path d="M230 65 L275 65 L270 85 L235 85Z" stroke="rgba(236,233,226,0.2)" stroke-width="1.2"/>
-          <!-- Connection lines -->
-          <path d="M142 82 Q170 82 220 70" stroke="rgba(212,184,150,0.25)" stroke-width="1" stroke-dasharray="4 4"/>
+          <rect x="190" y="38" width="112" height="66" rx="10" stroke="#D4B896" stroke-width="1.5" opacity="0.85"/>
+          <path d="M200 104 L212 122 L224 104" stroke="#D4B896" stroke-width="1.5" stroke-linejoin="round" opacity="0.85"/>
+          <!-- Message lines inside bubble -->
+          <line x1="206" y1="58" x2="286" y2="58" stroke="#D4B896" stroke-width="1" opacity="0.55"/>
+          <line x1="206" y1="72" x2="274" y2="72" stroke="#D4B896" stroke-width="1" opacity="0.4"/>
+          <line x1="206" y1="86" x2="256" y2="86" stroke="#D4B896" stroke-width="1" opacity="0.28"/>
+          <!-- Dashed connection from bubble to box -->
+          <path d="M190 72 Q165 72 160 108" stroke="rgba(212,184,150,0.3)" stroke-width="1" stroke-dasharray="4 4"/>
+          <!-- Delivery truck -->
+          <rect x="28" y="155" width="50" height="32" rx="3" stroke="rgba(236,233,226,0.2)" stroke-width="1.2"/>
+          <path d="M78 165 L96 165 L96 187 L78 187" stroke="rgba(236,233,226,0.15)" stroke-width="1.2"/>
+          <path d="M78 165 L90 155 L96 165" stroke="rgba(236,233,226,0.15)" stroke-width="1.2"/>
+          <circle cx="42" cy="190" r="5" stroke="rgba(236,233,226,0.2)" stroke-width="1"/>
+          <circle cx="84" cy="190" r="5" stroke="rgba(236,233,226,0.2)" stroke-width="1"/>
           <!-- Ground line -->
-          <line x1="30" y1="250" x2="290" y2="250" stroke="rgba(236,233,226,0.08)" stroke-width="1"/>
+          <line x1="20" y1="240" x2="300" y2="240" stroke="rgba(236,233,226,0.08)" stroke-width="1"/>
         </svg>
       </div>
 
@@ -255,27 +253,28 @@
           </h2>
           <div class="manifesto__grid">
             <p class="manifesto__lede reveal-text">
-              Aylık 50 sipariş alıyorken her şey güzeldi. Müdür mesajlara bizzat
-              cevap veriyordu, sipariş takipleri elden yapılıyordu, iade talepleri
-              1 günde çözülüyordu.<br><br>
-              500 siparişe çıkınca her şey kırıldı. WhatsApp'a günde 200 mesaj
-              yağıyor. "Kargom nerede?", "Bu üründe stok var mı?", "İade nasıl
-              yapılır?", "Renk farklı mı?" — aynı 30 soru her gün.<br><br>
-              Müşteri 4 saat sonra cevap aldığında ya küfretmiş ya da satıcıyı
-              değiştirmiş oluyor.
+              Aylık 50 sipariş alıyorken her şey güzeldi. Müdür mesajlara
+              bizzat cevap veriyordu, sipariş takipleri elden yapılıyordu,
+              iade talepleri 1 günde çözülüyordu.<br><br>
+              500 siparişe çıkınca her şey kırıldı. WhatsApp'a günde 200
+              mesaj yağıyor. "Kargom nerede?", "Bu üründe stok var mı?",
+              "İade nasıl yapılır?", "Renk farklı mı?" — aynı 30 soru her
+              gün.<br><br>
+              Müşteri 4 saat sonra cevap aldığında ya küfretmiş ya da
+              satıcıyı değiştirmiş oluyor.
             </p>
             <div class="manifesto__body reveal-text">
               <p>
-                E-ticaret işletmesi büyüdükçe müşteri hizmeti bir kara delik haline
-                geliyor. Personel artırmak para çözüyor — ama her yeni elemanın
-                eğitimi 2 ay, yorulması 6 ay. Sürekli devir-daim.
+                E-ticaret işletmesi büyüdükçe müşteri hizmeti bir kara delik
+                haline geliyor. Personel artırmak para çözüyor — ama her yeni
+                elemanın eğitimi 2 ay, yorulması 6 ay. Sürekli devir-daim.
               </p>
               <p>
-                Yapay zeka bu sorunu farklı bir açıdan çözüyor: tekrarlayan soruları
-                sıfırlıyor. Sipariş durumu sorusu? Bot bakıyor cevap veriyor. Stok
-                sorusu? Bot envanteri kontrol ediyor. İade nasıl? Bot adım adım
-                anlatıyor. Sadece insan müdahalesi gereken karmaşık durumlar müşteri
-                hizmetlerine düşüyor.
+                Yapay zeka bu sorunu farklı bir açıdan çözüyor: tekrarlayan
+                soruları sıfırlıyor. Sipariş durumu sorusu? Bot bakıyor cevap
+                veriyor. Stok sorusu? Bot envanteri kontrol ediyor. İade nasıl?
+                Bot adım adım anlatıyor. Sadece insan müdahalesi gereken
+                karmaşık durumlar müşteri hizmetlerine düşüyor.
               </p>
               <p>
                 Dravoxai bunu yapıyor: e-ticaret sisteminize entegre, sürekli
@@ -302,24 +301,21 @@
               <span class="practice__num">001</span>
               <div class="practice__content">
                 <div class="practice__icon" aria-hidden="true">
-                  <!-- SVG: Kutu + GPS pin (Sipariş takip) -->
+                  <!-- Kutu + GPS pin -->
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="20" width="22" height="18" rx="2" stroke="rgba(236,233,226,0.3)" stroke-width="1.5"/>
-                    <line x1="4" y1="27" x2="26" y2="27" stroke="rgba(236,233,226,0.18)" stroke-width="1"/>
-                    <rect x="10" y="22" width="10" height="4" rx="1" stroke="rgba(236,233,226,0.25)" stroke-width="1"/>
-                    <circle cx="30" cy="10" r="7" stroke="#D4B896" stroke-width="1.5"/>
-                    <circle cx="30" cy="9" r="3" stroke="#D4B896" stroke-width="1.2"/>
-                    <line x1="30" y1="17" x2="30" y2="22" stroke="#D4B896" stroke-width="1.5"/>
-                    <path d="M26 22 Q30 27 34 22" stroke="#D4B896" stroke-width="1.2" stroke-linecap="round"/>
-                    <path d="M26 29 Q28 29 28 20" stroke="rgba(212,184,150,0.3)" stroke-width="1" stroke-dasharray="3 2"/>
+                    <rect x="6" y="18" width="28" height="18" rx="2" stroke="rgba(236,233,226,0.3)" stroke-width="1.5"/>
+                    <path d="M4 18 L36 18 L32 10 L8 10 Z" stroke="rgba(236,233,226,0.25)" stroke-width="1.2"/>
+                    <line x1="20" y1="10" x2="20" y2="18" stroke="rgba(236,233,226,0.18)" stroke-width="1"/>
+                    <circle cx="20" cy="30" r="4" stroke="#D4B896" stroke-width="1.5"/>
+                    <circle cx="20" cy="29" r="1.5" fill="#D4B896" opacity="0.6"/>
                   </svg>
                 </div>
                 <span class="practice__name">Sipariş Takip Botu</span>
                 <span class="practice__desc">
-                  Müşteri "kargom nerede?" yazıyor — bot sipariş numarasıyla kargo
-                  şirketine bakıyor, anlık konumu söylüyor.<br><br>
-                  Aras, Yurtiçi, MNG, PTT, UPS — hepsi entegre. Hiç insan eline
-                  değmiyor.
+                  Müşteri "kargom nerede?" yazıyor — bot sipariş numarasıyla
+                  kargo şirketine bakıyor, anlık konumu söylüyor.<br><br>
+                  Aras, Yurtiçi, MNG, PTT, UPS — hepsi entegre. Hiç insan
+                  eline değmiyor.
                 </span>
               </div>
               <div class="practice__tags"><span>KARGO</span><span>OTOMATİK</span><span>MULTI-KANAL</span></div>
@@ -329,15 +325,13 @@
               <span class="practice__num">002</span>
               <div class="practice__content">
                 <div class="practice__icon" aria-hidden="true">
-                  <!-- SVG: WhatsApp + sepet (WhatsApp satış) -->
+                  <!-- WhatsApp + alışveriş sepeti -->
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="2" y="2" width="22" height="22" rx="6" stroke="#D4B896" stroke-width="1.5"/>
-                    <path d="M18 10c-.4-1.6-2-2.8-5-2.8S7.5 8.5 7.5 11c0 1.2.4 2.2 1.2 3L7.5 18l3.5-1c.4.2.8.2 1 .2 3.2 0 5.2-2 5.2-4.4 0-.6-.2-1.4-.4-2" stroke="rgba(236,233,226,0.45)" stroke-width="1.2" stroke-linecap="round"/>
-                    <!-- Shopping cart -->
-                    <path d="M24 28 L30 28 L36 36" stroke="rgba(236,233,226,0.35)" stroke-width="1.5" stroke-linecap="round"/>
-                    <circle cx="30" cy="38" r="2" stroke="rgba(212,184,150,0.6)" stroke-width="1.2"/>
-                    <circle cx="36" cy="38" r="2" stroke="rgba(212,184,150,0.6)" stroke-width="1.2"/>
-                    <path d="M25 30 L38 30 L36 36 L28 36Z" stroke="#D4B896" stroke-width="1.2"/>
+                    <path d="M18 10c-.4-1.6-2-2.8-5-2.8S7.5 9.5 7.5 12c0 1.2.4 2.2 1.2 3L7.5 19l3.5-1c.4.2.8.2 1 .2 3.2 0 5.2-2 5.2-4.4 0-.6-.2-1.4-.4-2" stroke="rgba(236,233,226,0.45)" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M24 22 L26 28 L36 28 L38 22 Z" stroke="#D4B896" stroke-width="1.2"/>
+                    <circle cx="28" cy="32" r="2" stroke="#D4B896" stroke-width="1.2"/>
+                    <circle cx="34" cy="32" r="2" stroke="#D4B896" stroke-width="1.2"/>
                   </svg>
                 </div>
                 <span class="practice__name">WhatsApp Satış Botu</span>
@@ -355,17 +349,15 @@
               <span class="practice__num">003</span>
               <div class="practice__content">
                 <div class="practice__icon" aria-hidden="true">
-                  <!-- SVG: Kulaklık + chat balonu (Müşteri hizmetleri) -->
+                  <!-- Kulaklık + chat balonu -->
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 20 Q8 10 20 10 Q32 10 32 20" stroke="#D4B896" stroke-width="1.5" stroke-linecap="round"/>
-                    <rect x="4" y="20" width="6" height="10" rx="3" stroke="#D4B896" stroke-width="1.5"/>
-                    <rect x="30" y="20" width="6" height="10" rx="3" stroke="#D4B896" stroke-width="1.5"/>
-                    <path d="M32 28 Q32 34 26 34 L22 34" stroke="rgba(236,233,226,0.3)" stroke-width="1.2" stroke-linecap="round"/>
-                    <!-- Chat bubble -->
-                    <rect x="18" y="30" width="20" height="12" rx="4" stroke="rgba(212,184,150,0.6)" stroke-width="1.2"/>
-                    <path d="M20 42 L18 46 L24 42" stroke="rgba(212,184,150,0.5)" stroke-width="1" stroke-linejoin="round"/>
-                    <line x1="22" y1="34" x2="34" y2="34" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="22" y1="38" x2="30" y2="38" stroke="rgba(212,184,150,0.3)" stroke-width="1"/>
+                    <path d="M8 20 C8 12 12 6 20 6 C28 6 32 12 32 20" stroke="rgba(236,233,226,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+                    <rect x="5" y="19" width="6" height="10" rx="3" stroke="#D4B896" stroke-width="1.5"/>
+                    <rect x="29" y="19" width="6" height="10" rx="3" stroke="#D4B896" stroke-width="1.5"/>
+                    <rect x="13" y="24" width="14" height="10" rx="3" stroke="rgba(212,184,150,0.5)" stroke-width="1"/>
+                    <path d="M16 34 L14 38 L20 34" stroke="rgba(212,184,150,0.4)" stroke-width="1" stroke-linejoin="round"/>
+                    <line x1="15" y1="28" x2="25" y2="28" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
+                    <line x1="15" y1="31" x2="22" y2="31" stroke="rgba(212,184,150,0.3)" stroke-width="1"/>
                   </svg>
                 </div>
                 <span class="practice__name">Müşteri Hizmetleri Asistanı</span>
@@ -384,28 +376,28 @@
               <span class="practice__num">004</span>
               <div class="practice__content">
                 <div class="practice__icon" aria-hidden="true">
-                  <!-- SVG: Multi-platform bağlantı (Otomasyon) -->
+                  <!-- Multi-platform bağlantı -->
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="4" stroke="#D4B896" stroke-width="1.5"/>
                     <circle cx="6" cy="8" r="3" stroke="rgba(236,233,226,0.35)" stroke-width="1.2"/>
                     <circle cx="34" cy="8" r="3" stroke="rgba(236,233,226,0.35)" stroke-width="1.2"/>
                     <circle cx="6" cy="32" r="3" stroke="rgba(236,233,226,0.35)" stroke-width="1.2"/>
                     <circle cx="34" cy="32" r="3" stroke="rgba(236,233,226,0.35)" stroke-width="1.2"/>
-                    <circle cx="20" cy="4" r="2" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="9" y1="9" x2="16" y2="16" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="31" y1="9" x2="24" y2="16" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="9" y1="31" x2="16" y2="24" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="31" y1="31" x2="24" y2="24" stroke="rgba(212,184,150,0.4)" stroke-width="1"/>
-                    <line x1="20" y1="6" x2="20" y2="16" stroke="rgba(212,184,150,0.3)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <circle cx="20" cy="4" r="2.5" stroke="rgba(212,184,150,0.5)" stroke-width="1.2"/>
+                    <line x1="9" y1="9" x2="16" y2="17" stroke="rgba(212,184,150,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <line x1="31" y1="9" x2="24" y2="17" stroke="rgba(212,184,150,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <line x1="9" y1="31" x2="16" y2="23" stroke="rgba(212,184,150,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <line x1="31" y1="31" x2="24" y2="23" stroke="rgba(212,184,150,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <line x1="20" y1="6" x2="20" y2="16" stroke="rgba(212,184,150,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
                   </svg>
                 </div>
                 <span class="practice__name">Otomasyon &amp; Entegrasyon</span>
                 <span class="practice__desc">
                   Trendyol, Hepsiburada, Shopify, WooCommerce, IdeaSoft — tüm
-                  panelleriniz tek sisteme bağlanıyor. Sipariş, stok, kargo, fatura,
-                  e-posta — hepsi otomatik akıyor.<br><br>
-                  Yeni sipariş geliyor → mutfağa/depoya düşüyor → müşteriye SMS →
-                  kargo etiketi → fatura — insan eline değmeden.
+                  panelleriniz tek sisteme bağlanıyor. Sipariş, stok, kargo,
+                  fatura, e-posta — hepsi otomatik akıyor.<br><br>
+                  Yeni sipariş geliyor → depoya düşüyor → müşteriye SMS → kargo
+                  etiketi → fatura — insan eline değmeden.
                 </span>
               </div>
               <div class="practice__tags"><span>N8N</span><span>MARKETPLACE</span><span>API</span></div>
@@ -429,9 +421,10 @@
               <h3 class="approach__step-name">Keşif</h3>
               <p class="approach__step-desc">1. Hafta</p>
               <p class="approach__step-body">
-                E-ticaretin akışını izliyoruz. Hangi sorular en çok geliyor, hangi
-                panel kullanılıyor, hangi kanallarda satış var, müşteri hizmetleri
-                ekibi günde ne kadar zaman harcıyor — tek seansta çıkarıyoruz.
+                E-ticaretinizin akışını izliyoruz. Hangi sorular en çok geliyor,
+                hangi panel kullanılıyor, hangi kanallarda satış var, müşteri
+                hizmetleri ekibi günde ne kadar zaman harcıyor — tek seansta
+                çıkarıyoruz.
               </p>
               <p class="approach__step-output">
                 <span class="approach__step-out-label">Çıktı:</span>
@@ -459,8 +452,8 @@
               <h3 class="approach__step-name">Yayın &amp; Takip</h3>
               <p class="approach__step-desc">3. Hafta+</p>
               <p class="approach__step-body">
-                Devreye alıyoruz. İlk hafta her konuşmayı denetliyoruz, ince ayar
-                yapıyoruz. Aylık raporla geliştirmeye devam.
+                Devreye alıyoruz. İlk hafta her konuşmayı denetliyoruz, ince
+                ayar yapıyoruz. Aylık raporla geliştirmeye devam.
               </p>
               <p class="approach__step-output">
                 <span class="approach__step-out-label">Çıktı:</span>
@@ -511,7 +504,7 @@
         <div class="container">
           <p class="section__label reveal-text">SIKÇA SORULANLAR</p>
           <h2 class="section__heading reveal-text" id="sss-heading">
-            E-ticaret işletmecilerinin sorduğu sorular.
+            E-ticaret sahiplerinin sorduğu sorular.
           </h2>
           <div class="faq__list reveal-text" role="list">
 
@@ -688,19 +681,19 @@
         </div>
         <div class="form__field">
           <label class="form__label" for="demo-email">E-posta *</label>
-          <input class="form__input" type="email" id="demo-email" name="email" required autocomplete="email" placeholder="ornek@magazaniz.com" />
+          <input class="form__input" type="email" id="demo-email" name="email" required autocomplete="email" placeholder="ornek@eticaret.com" />
         </div>
         <div class="form__field">
           <label class="form__label" for="demo-phone">Telefon *</label>
           <input class="form__input" type="tel" id="demo-phone" name="phone" required autocomplete="tel" placeholder="+90 5XX XXX XX XX" />
         </div>
         <div class="form__field">
-          <label class="form__label" for="demo-store">E-ticaret Site / Panel Adı *</label>
-          <input class="form__input" type="text" id="demo-store" name="store_name" required placeholder="Örn: Trendyol mağazam / Shopify site" />
+          <label class="form__label" for="demo-site">E-ticaret Sitesi / Panel *</label>
+          <input class="form__input" type="text" id="demo-site" name="eticaret_site" required placeholder="Trendyol, Shopify, WooCommerce vb." />
         </div>
         <div class="form__field">
-          <label class="form__label" for="demo-volume">Aylık Sipariş Hacmi</label>
-          <input class="form__input" type="text" id="demo-volume" name="monthly_orders" placeholder="Örn: 100-500 sipariş/ay" />
+          <label class="form__label" for="demo-orders">Aylık Sipariş Hacmi</label>
+          <input class="form__input" type="text" id="demo-orders" name="order_count" placeholder="Örn: 200-500 sipariş" />
         </div>
         <button class="form__submit" type="submit">
           <span class="form__submit-text">Demo Talep Et</span>
