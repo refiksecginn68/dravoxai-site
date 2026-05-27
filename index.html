@@ -215,62 +215,207 @@
           </h2>
           
           <div class="flow-container reveal-text">
-            <!-- SVG Connection Lines (Desktop only) -->
-            <svg class="flow-svg" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- SVG Connection Lines with Flowing Data Particles (Dynamic JS Positioning) -->
+            <svg class="flow-svg" id="flow-connections" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <defs>
+                <!-- Line Gradients -->
                 <linearGradient id="gold-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stop-color="rgba(212, 184, 150, 0.05)" />
-                  <stop offset="50%" stop-color="rgba(212, 184, 150, 0.7)" />
+                  <stop offset="50%" stop-color="rgba(212, 184, 150, 0.6)" />
                   <stop offset="100%" stop-color="rgba(212, 184, 150, 0.05)" />
                 </linearGradient>
+                <!-- Particle Glow Filter -->
+                <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
               </defs>
-              <!-- Left to Center lines -->
-              <path d="M 230, 50 C 310, 50 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--1" />
-              <path d="M 230, 125 C 310, 125 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--2" />
-              <path d="M 230, 200 H 390" stroke="url(#gold-line-grad)" class="flow-line flow-line--3" />
-              <path d="M 230, 275 C 310, 275 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--4" />
-              <path d="M 230, 350 C 310, 350 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--5" />
               
-              <!-- Center to Right lines -->
-              <path d="M 410, 200 C 490, 200 490, 50 570, 50" stroke="url(#gold-line-grad)" class="flow-line flow-line--6" />
-              <path d="M 410, 200 C 490, 200 490, 150 570, 150" stroke="url(#gold-line-grad)" class="flow-line flow-line--7" />
-              <path d="M 410, 200 C 490, 200 490, 250 570, 250" stroke="url(#gold-line-grad)" class="flow-line flow-line--8" />
-              <path d="M 410, 200 C 490, 200 490, 350 570, 350" stroke="url(#gold-line-grad)" class="flow-line flow-line--9" />
+              <!-- Left to Center paths (Initialized with safe 0,0 value, updated by JS) -->
+              <path id="line-left-0" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-left-1" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-left-2" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-left-3" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-left-4" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              
+              <!-- Center to Right paths (Initialized with safe 0,0 value, updated by JS) -->
+              <path id="line-right-0" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-right-1" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-right-2" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              <path id="line-right-3" d="M 0,0 L 0,0" stroke="url(#gold-line-grad)" stroke-width="1.5" fill="none" />
+              
+              <!-- Flowing Particles -->
+              <!-- Line 0 Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="3s" repeatCount="indefinite"><mpath href="#line-left-0"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite"><mpath href="#line-left-0"/></animateMotion>
+              </circle>
+              
+              <!-- Line 1 Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#line-left-1"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="3.5s" begin="1.75s" repeatCount="indefinite"><mpath href="#line-left-1"/></animateMotion>
+              </circle>
+              
+              <!-- Line 2 Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#line-left-2"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="2.5s" begin="1.25s" repeatCount="indefinite"><mpath href="#line-left-2"/></animateMotion>
+              </circle>
+              
+              <!-- Line 3 Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="4s" repeatCount="indefinite"><mpath href="#line-left-3"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="4s" begin="2s" repeatCount="indefinite"><mpath href="#line-left-3"/></animateMotion>
+              </circle>
+              
+              <!-- Line 4 Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#line-left-4"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="4.5s" begin="2.25s" repeatCount="indefinite"><mpath href="#line-left-4"/></animateMotion>
+              </circle>
+              
+              <!-- Line 5 (Right 0) Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="3s" repeatCount="indefinite"><mpath href="#line-right-0"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite"><mpath href="#line-right-0"/></animateMotion>
+              </circle>
+              
+              <!-- Line 6 (Right 1) Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#line-right-1"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="3.5s" begin="1.75s" repeatCount="indefinite"><mpath href="#line-right-1"/></animateMotion>
+              </circle>
+              
+              <!-- Line 7 (Right 2) Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#line-right-2"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#line-right-2"/></animateMotion>
+              </circle>
+              
+              <!-- Line 8 (Right 3) Particles -->
+              <circle r="3.5" fill="#D4B896" filter="url(#glow-filter)">
+                <animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#line-right-3"/></animateMotion>
+              </circle>
+              <circle r="2" fill="#FFFFFF">
+                <animateMotion dur="4.2s" begin="2.1s" repeatCount="indefinite"><mpath href="#line-right-3"/></animateMotion>
+              </circle>
             </svg>
             
             <!-- Column 1: Inputs / Channels -->
             <div class="flow-column flow-column--left">
               <h3 class="flow-column__title">İletişim Kanalları</h3>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">📞</span>
-                <span class="flow-node__text">Sesli Çağrı / Telefon</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">Sesli Çağrı / Telefon</h4>
+                  <p class="flow-node__desc">Yapay zeka ses asistanı entegrasyonu</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">💬</span>
-                <span class="flow-node__text">WhatsApp Business</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.66.986 3.288 1.499 4.887 1.501 5.378 0 9.75-4.374 9.754-9.756.002-2.605-1.01-5.057-2.85-6.899-1.841-1.842-4.29-2.855-6.897-2.857-5.385 0-9.761 4.373-9.765 9.755-.002 1.81.479 3.58 1.393 5.161L2.112 21.99l6.196-1.625c-.563-.338-1.127-.674-1.661-1.211zm11.722-6.522c-.328-.164-1.942-.958-2.242-1.069-.3-.109-.519-.164-.737.164-.219.327-.847 1.069-1.039 1.288-.192.218-.383.245-.71.082-.328-.164-1.385-.51-2.637-1.627-.975-.87-1.632-1.947-1.824-2.274-.192-.327-.02-.504.143-.667.147-.147.328-.382.492-.573.164-.191.218-.328.328-.546.11-.218.055-.41-.027-.573-.082-.164-.737-1.775-1.01-2.43-.267-.641-.539-.553-.737-.563-.191-.01-.41-.011-.628-.011-.218 0-.573.082-.874.41-.301.328-1.147 1.119-1.147 2.73 0 1.611 1.174 3.167 1.338 3.385.164.218 2.308 3.525 5.59 4.949.78.339 1.39.541 1.867.692.784.249 1.498.214 2.062.129.629-.094 1.942-.793 2.215-1.558.273-.765.273-1.42.191-1.558-.082-.137-.3-.218-.628-.382z"/></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">WhatsApp Business</h4>
+                  <p class="flow-node__desc">Otonom mesajlaşma &amp; randevu</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">📸</span>
-                <span class="flow-node__text">Instagram DM</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">Instagram DM</h4>
+                  <p class="flow-node__desc">Sosyal medya satış otomasyonu</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">🌐</span>
-                <span class="flow-node__text">Web Canlı Chat</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">Web Canlı Chat</h4>
+                  <p class="flow-node__desc">7/24 otonom web sitesi asistanı</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">✉️</span>
-                <span class="flow-node__text">E-Posta / Formlar</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">E-Posta / Formlar</h4>
+                  <p class="flow-node__desc">Gelen talepleri otomatik işleme</p>
+                </div>
               </div>
             </div>
             
             <!-- Column 2: The Core AI Brain -->
             <div class="flow-column flow-column--center">
               <div class="flow-brain-node">
+                <!-- Rotating Ring Layers -->
+                <div class="brain-rings">
+                  <div class="brain-ring brain-ring--1"></div>
+                  <div class="brain-ring brain-ring--2"></div>
+                  <div class="brain-ring brain-ring--3"></div>
+                </div>
                 <div class="brain-glow"></div>
                 <div class="brain-core">
-                  <span class="brain-logo">D</span>
-                  <span class="brain-title">Dravox AI Brain</span>
-                  <span class="brain-status">Aktif &amp; Otonom</span>
+                  <div class="brain-core__pulse"></div>
+                  <!-- Neural Brain Core Logo -->
+                  <svg class="brain-core__svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                      <radialGradient id="brain-glow-grad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#D4B896" stop-opacity="0.35" />
+                        <stop offset="100%" stop-color="#D4B896" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="40" fill="url(#brain-glow-grad)" />
+                    <!-- Left hemisphere curves -->
+                    <path d="M50 25 C33 25, 23 35, 23 48 C23 60, 33 70, 42 72 C45 74, 48 76, 50 78" stroke="#D4B896" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+                    <path d="M50 35 C40 35, 33 40, 33 48 C33 55, 40 60, 50 62" stroke="#D4B896" stroke-width="1.2" opacity="0.65" />
+                    <!-- Right hemisphere curves -->
+                    <path d="M50 25 C67 25, 77 35, 77 48 C77 60, 67 70, 58 72 C55 74, 52 76, 50 78" stroke="#D4B896" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+                    <path d="M50 35 C60 35, 67 40, 67 48 C67 55, 60 60, 50 62" stroke="#D4B896" stroke-width="1.2" opacity="0.65" />
+                    <!-- Neural Nodes -->
+                    <circle cx="50" cy="25" r="3" fill="#FFFFFF" />
+                    <circle cx="50" cy="78" r="3" fill="#FFFFFF" />
+                    <circle cx="23" cy="48" r="2.5" fill="#D4B896" />
+                    <circle cx="77" cy="48" r="2.5" fill="#D4B896" />
+                    <circle cx="33" cy="48" r="2" fill="#D4B896" />
+                    <circle cx="67" cy="48" r="2" fill="#D4B896" />
+                    <circle cx="42" cy="72" r="2" fill="#D4B896" />
+                    <circle cx="58" cy="72" r="2" fill="#D4B896" />
+                    <line x1="50" y1="25" x2="50" y2="78" stroke="#D4B896" stroke-width="1" stroke-dasharray="2 2" opacity="0.5" />
+                  </svg>
+                  <span class="brain-title">Dravox AI</span>
+                  <span class="brain-status">
+                    <span class="status-dot"></span>
+                    Otonom Beyin
+                  </span>
                 </div>
               </div>
             </div>
@@ -278,21 +423,45 @@
             <!-- Column 3: Outputs / Integrations -->
             <div class="flow-column flow-column--right">
               <h3 class="flow-column__title">İş Sistemleri</h3>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">📊</span>
-                <span class="flow-node__text">CRM (HubSpot/Salesforce)</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">CRM Altyapısı</h4>
+                  <p class="flow-node__desc">HubSpot, Salesforce, Zoho vb. entegrasyon</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">📦</span>
-                <span class="flow-node__text">ERP &amp; Stok Yönetimi</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><polygon points="12 22.08 12 12 3 6.92 3 17.08 12 22.08"></polygon><polygon points="12 12 21 6.92 21 17.08 12 22.08"></polygon><polygon points="12 2 3 6.92 12 12 21 6.92 12 2"></polygon><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">ERP &amp; Stok</h4>
+                  <p class="flow-node__desc">Gerçek zamanlı stok &amp; fatura takibi</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">📅</span>
-                <span class="flow-node__text">Randevu &amp; Takvim</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">Randevu &amp; Takvim</h4>
+                  <p class="flow-node__desc">Google Calendar &amp; HMS senkronize</p>
+                </div>
               </div>
+              
               <div class="flow-node">
-                <span class="flow-node__icon">🗄️</span>
-                <span class="flow-node__text">Veritabanı / SQL</span>
+                <div class="flow-node__icon-container">
+                  <svg class="flow-node__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                </div>
+                <div class="flow-node__content">
+                  <h4 class="flow-node__title">Veritabanı / SQL</h4>
+                  <p class="flow-node__desc">KVKK uyumlu güvenli depolama</p>
+                </div>
               </div>
             </div>
           </div>

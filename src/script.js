@@ -364,6 +364,96 @@ function tick() {
   renderer.render(scene, camera);
 }
 
+// ─── Entegrasyon Flow Connectors (Dynamic Path Calculations) ───
+function updateFlowLines() {
+  const container = document.querySelector('.flow-container');
+  const svg = document.getElementById('flow-connections');
+  if (!container || !svg) return;
+
+  // On mobile (max-width: 900px), lines are hidden, don't waste performance
+  if (window.innerWidth <= 900) {
+    svg.removeAttribute('viewBox');
+    return;
+  }
+
+  const containerRect = container.getBoundingClientRect();
+  const w = containerRect.width;
+  const h = containerRect.height;
+  
+  // Set dimensions dynamically to map 1:1 with pixels
+  svg.setAttribute('width', w);
+  svg.setAttribute('height', h);
+  svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+
+  const brain = document.querySelector('.flow-brain-node');
+  if (!brain) return;
+  const brainRect = brain.getBoundingClientRect();
+
+  // Find exact center coordinates of brain-core relative to flow-container
+  const brainWidth = 120; // width of brain-core in px
+  const brainLeftX = brainRect.left - containerRect.left + (brainRect.width - brainWidth) / 2;
+  const brainRightX = brainLeftX + brainWidth;
+  const brainCenterY = brainRect.top - containerRect.top + brainRect.height / 2;
+
+  // 1. Left nodes (inputs)
+  const leftNodes = document.querySelectorAll('.flow-column--left .flow-node');
+  leftNodes.forEach((node, index) => {
+    const nodeRect = node.getBoundingClientRect();
+    // Connect from right edge of left node card
+    const startX = nodeRect.right - containerRect.left;
+    const startY = nodeRect.top - containerRect.top + nodeRect.height / 2;
+
+    // Curved Cubic Bezier curve paths
+    const cp1x = startX + (brainLeftX - startX) * 0.45;
+    const cp1y = startY;
+    const cp2x = startX + (brainLeftX - startX) * 0.55;
+    const cp2y = brainCenterY;
+
+    const d = `M ${startX},${startY} C ${cp1x},${cp1y} ${cp2x},${cp2y} ${brainLeftX},${brainCenterY}`;
+
+    const path = document.getElementById(`line-left-${index}`);
+    if (path) {
+      path.setAttribute('d', d);
+    }
+  });
+
+  // 2. Right nodes (outputs)
+  const rightNodes = document.querySelectorAll('.flow-column--right .flow-node');
+  rightNodes.forEach((node, index) => {
+    const nodeRect = node.getBoundingClientRect();
+    // Connect to left edge of right node card
+    const endX = nodeRect.left - containerRect.left;
+    const endY = nodeRect.top - containerRect.top + nodeRect.height / 2;
+
+    // Curved Cubic Bezier curve paths
+    const cp1x = brainRightX + (endX - brainRightX) * 0.45;
+    const cp1y = brainCenterY;
+    const cp2x = brainRightX + (endX - brainRightX) * 0.55;
+    const cp2y = endY;
+
+    const d = `M ${brainRightX},${brainCenterY} C ${cp1x},${cp1y} ${cp2x},${cp2y} ${endX},${endY}`;
+
+    const path = document.getElementById(`line-right-${index}`);
+    if (path) {
+      path.setAttribute('d', d);
+    }
+  });
+}
+
+function initFlowLines() {
+  updateFlowLines();
+  window.addEventListener('resize', updateFlowLines);
+  
+  // Refresh on ScrollTrigger layout updates and font loads
+  if (typeof ScrollTrigger !== 'undefined') {
+    ScrollTrigger.addEventListener('refresh', updateFlowLines);
+  }
+  
+  if (document.fonts) {
+    document.fonts.ready.then(updateFlowLines);
+  }
+}
+
 // ─── Boot ─────────────────────────────────────────────────────────
 // Defer WebGL setup so hero headline registers as LCP first
 const boot = () => {
@@ -376,6 +466,7 @@ const boot = () => {
   initReveals();
   initNav();
   initContactForm();
+  initFlowLines();
   tick();
 };
 
