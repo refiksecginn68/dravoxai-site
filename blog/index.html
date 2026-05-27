@@ -54,11 +54,24 @@
       </a>
       <nav class="nav__center" aria-label="Ana Menü">
         <ul class="nav__links">
-          <li><a href="/#manifesto" class="nav__btn">Hakkımızda</a></li>
-          <li><a href="/#hizmetler" class="nav__btn">Hizmetler</a></li>
           <li class="nav__dropdown-wrap">
             <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-              Sektörler
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
               <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
                 <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
@@ -66,12 +79,28 @@
             <ul class="nav__dropdown" role="menu">
               <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
               <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
             </ul>
           </li>
-          <li><a href="/#calisma" class="nav__btn">Projeler</a></li>
-          <li><a href="/blog" class="nav__btn nav__btn--active">Blog</a></li>
-          <li><a href="/#yaklasim" class="nav__btn">Yaklaşım</a></li>
-          <li><a href="/#iletisim" class="nav__btn">İletişim</a></li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="nav__spacer" aria-hidden="true"></div>
@@ -90,6 +119,50 @@
     <!-- Card grid -->
     <div class="blog-grid-wrap">
       <div class="blog-grid">
+
+        <!-- Yazı 006 -->
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">27 Mayıs 2026</span>
+            <span class="blog-card__cat">OTELCİLİK / TEKNOLOJİ</span>
+          </div>
+          <h2 class="blog-card__title">Otellerde PMS Entegrasyonlu Chatbotların Rezervasyona Etkisi</h2>
+          <p class="blog-card__summary">Otellerde kullanılan PMS (Property Management System) entegrasyonlu yapay zeka chatbotlarının direkt rezervasyon oranlarına etkisi, entegrasyon yöntemleri ve ROI analizi.</p>
+          <a href="/blog/otel-pms-entegrasyonlu-chatbot-rezervasyon" class="blog-card__link">Okumaya başla →</a>
+        </article>
+
+        <!-- Yazı 005 -->
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">27 Mayıs 2026</span>
+            <span class="blog-card__cat">OTOMASYON / ENTEGRASYON</span>
+          </div>
+          <h2 class="blog-card__title">n8n ile WhatsApp ve CRM Lead Entegrasyonu Nasıl Yapılır?</h2>
+          <p class="blog-card__summary">Resmi WhatsApp Business API ve n8n kullanarak gelen müşteri taleplerini CRM (HubSpot, Salesforce) sisteminize otomatik aktarma rehberi.</p>
+          <a href="/blog/n8n-whatsapp-crm-lead-entegrasyonu" class="blog-card__link">Okumaya başla →</a>
+        </article>
+
+        <!-- Yazı 004 -->
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">27 Mayıs 2026</span>
+            <span class="blog-card__cat">YAPAY ZEKA / OTOMASYON</span>
+          </div>
+          <h2 class="blog-card__title">Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulum Rehberi</h2>
+          <p class="blog-card__summary">Sesli yapay zeka (Voice AI) asistanları telefon hatlarını ve müşteri desteğini nasıl otonom hale getiriyor? VAPI, Retell AI ve n8n ile entegrasyon rehberi.</p>
+          <a href="/blog/sesli-ai-nedir-n8n-giris" class="blog-card__link">Okumaya başla →</a>
+        </article>
+
+        <!-- Yazı 003 -->
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">25 Mayıs 2026</span>
+            <span class="blog-card__cat">RESTORAN / OTOMASYON</span>
+          </div>
+          <h2 class="blog-card__title">Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur?</h2>
+          <p class="blog-card__summary">Yoğun saatlerde telefonları açamıyor musunuz? Restoranlar için WhatsApp sipariş ve rezervasyon botu kurulum rehberi. POS entegrasyonu, maliyet ve ROI analizi.</p>
+          <a href="/blog/restoran-whatsapp-otomasyon-rehberi" class="blog-card__link">Okumaya başla →</a>
+        </article>
 
         <!-- Yazı 002 -->
         <article class="blog-card">

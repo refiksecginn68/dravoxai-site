@@ -270,7 +270,7 @@ function initContactForm() {
     status.className   = 'form__status';
 
     try {
-      const res = await fetch(form.action, {
+      const res = await fetch('/', {
         method:  'POST',
         body:    new FormData(form),
         headers: { Accept: 'application/json' },
@@ -293,7 +293,7 @@ function initContactForm() {
   });
 }
 
-// ─── Nav hide/show ────────────────────────────────────────────────
+// ─── Nav hide/show & Smooth Scroll ────────────────────────────────
 function initNav() {
   const nav = document.querySelector('.nav');
   if (!nav) return;
@@ -314,6 +314,30 @@ function initNav() {
 
     lastY = y;
   }, { passive: true });
+
+  // Intercept homepage anchor links starting with # for smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        lenis.scrollTo(targetEl, { offset: -80, duration: 1.2 });
+      }
+    });
+  });
+
+  // Handle incoming hash in the URL on initial page load (e.g. landing from other pages)
+  if (window.location.hash) {
+    const hash = window.location.hash;
+    setTimeout(() => {
+      const targetEl = document.querySelector(hash);
+      if (targetEl) {
+        lenis.scrollTo(targetEl, { offset: -80, duration: 1.2, immediate: false });
+      }
+    }, 600); // 600ms buffer to allow Three.js canvas and scroll height animations to stabilize
+  }
 }
 
 // ─── Render loop ─────────────────────────────────────────────────

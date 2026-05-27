@@ -150,29 +150,57 @@
   <header class="nav" role="banner">
     <div class="nav__row">
       <a href="/" class="nav__brand" aria-label="Ana Sayfa">
-        <img class="nav__logo" src="/logo.png" alt="Dravoxai Logo" height="32" onerror="this.style.display='none'" />
+        <img class="nav__logo" src="/logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
       </a>
       <nav class="nav__center" aria-label="Ana Menü">
         <ul class="nav__links">
-          <li><a href="/#manifesto" class="nav__btn">Hakkımızda</a></li>
-          <li><a href="/#hizmetler" class="nav__btn">Hizmetler</a></li>
           <li class="nav__dropdown-wrap">
             <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-              Sektörler
+              Özellikler
               <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
                 <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </button>
             <ul class="nav__dropdown" role="menu">
-              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
-              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
-              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
             </ul>
           </li>
-          <li><a href="/#calisma" class="nav__btn">Projeler</a></li>
-          <li><a href="/blog" class="nav__btn">Blog</a></li>
-          <li><a href="/#yaklasim" class="nav__btn">Yaklaşım</a></li>
-          <li><a href="/#iletisim" class="nav__btn">İletişim</a></li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">Oteller İçin AI</a></li>
+              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="nav__spacer" aria-hidden="true"></div>
@@ -500,6 +528,32 @@
         </div>
       </section>
 
+      <!-- ── INSTAGRAM İNFOGRAFİK ───────────────────────────────── -->
+      <section class="section infographic-section reveal-text">
+        <div class="container">
+          <p class="section__label">İNFOGRAFİK SUNUM</p>
+          <h2 class="infographic-section__title">Sosyal Medya Paylaşımlarımızla Otel AI Asistanı</h2>
+          <p class="infographic-section__subtitle">Instagram sayfamızda paylaştığımız, otel çözümlerimizin çalışma mantığını ve getirdiği avantajları anlatan görsel sunumumuz. Yana kaydırarak inceleyebilirsiniz.</p>
+          <div class="infographic-carousel">
+            <div class="infographic-slide">
+              <img src="/images/instagram/otel çözüm/dravoxai_otel_01_cover.jpg" alt="Otel AI Asistanı Cover" loading="lazy" />
+            </div>
+            <div class="infographic-slide">
+              <img src="/images/instagram/otel çözüm/dravoxai_otel_02_problem.jpg" alt="Otel Sektör Problemleri" loading="lazy" />
+            </div>
+            <div class="infographic-slide">
+              <img src="/images/instagram/otel çözüm/dravoxai_otel_03_cozum.jpg" alt="Otel AI Çözüm" loading="lazy" />
+            </div>
+            <div class="infographic-slide">
+              <img src="/images/instagram/otel çözüm/dravoxai_otel_04_metrikler.jpg" alt="Otel AI Metrikleri" loading="lazy" />
+            </div>
+            <div class="infographic-slide">
+              <img src="/images/instagram/otel çözüm/dravoxai_otel_05_cta.jpg" alt="Otel AI Call to Action" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ── BÖLÜM 6: SSS ──────────────────────────────────────── -->
       <section class="section" id="sss" aria-labelledby="sss-heading">
         <div class="container">
@@ -531,7 +585,7 @@
                 </svg>
               </button>
               <div class="faq__answer">
-                <p>Evet. API'si olan tüm PMS sistemleri için doğrudan entegrasyon kuruyoruz. API'si olmayan eski sistemler için n8n üzerinden ara katman çözüm geliştiriyoruz — manuel aktarımdan kurtulursunuz.</p>
+                <p>Evet. API'si olan tüm PMS sistemleri için doğrudan entegrasyon kuruyoruz. API'si olmayan eski sistemler için n8n üzerinden ara katman çözüm geliştiriyoruz — manuel aktarımdan kurtulursunuz. Konunun detayları ve rezervasyona etkileri için <a href="/blog/otel-pms-entegrasyonlu-chatbot-rezervasyon">PMS Entegrasyon Rehberimizi</a> inceleyebilirsiniz.</p>
               </div>
             </div>
 

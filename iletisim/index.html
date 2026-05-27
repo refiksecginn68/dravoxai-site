@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>İletişim — Bizimle Bağlantı Kurun | Dravoxai</title>
+  <meta name="description" content="Dravoxai AI Otomasyon Stüdyosu iletişim sayfası. Bizimle iletişime geçin, işletmenizin yapay zeka dönüşümünü birlikte planlayalım. E-posta, telefon ve WhatsApp." />
+  <meta name="keywords" content="dravoxai iletişim, yapay zeka stüdyosu adres, ai otomasyon telefon, aksaray yapay zeka" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dravoxai" />
+  <link rel="canonical" href="https://dravoxai.com/iletisim" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="İletişim — Bizimle Bağlantı Kurun | Dravoxai" />
+  <meta property="og:description" content="Dravoxai AI Otomasyon Stüdyosu iletişim sayfası. Bizimle iletişime geçin, işletmenizin yapay zeka dönüşümünü birlikte planlayalım. E-posta, telefon ve WhatsApp." />
+  <meta property="og:url" content="https://dravoxai.com/iletisim" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Dravoxai" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD: ContactPage & LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Dravoxai İletişim",
+    "description": "Dravoxai AI Otomasyon Stüdyosu iletişim kanalları ve başvuru formu.",
+    "url": "https://dravoxai.com/iletisim"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://dravoxai.com/"},
+      {"@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://dravoxai.com/iletisim"}
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" />
+  
+  <style>
+    .iletisim-hero {
+      padding: clamp(96px, 12vh, 180px) 0 clamp(32px, 4vh, 64px);
+      text-align: center;
+      border-bottom: 1px solid var(--rule);
+    }
+    .iletisim-hero__label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+      display: block;
+      margin-bottom: 16px;
+    }
+    .iletisim-hero__h1 {
+      font-family: var(--font-display);
+      font-size: clamp(38px, 5.5vw, 84px);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--fg);
+    }
+    .iletisim-hero__sub {
+      color: var(--fg-dim);
+      font-size: clamp(15px, 1.8vw, 18px);
+      max-width: 600px;
+      margin: 24px auto 0;
+      line-height: 1.6;
+    }
+    
+    .iletisim-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 80px;
+      padding: clamp(64px, 8vh, 120px) 0;
+      align-items: start;
+    }
+    
+    .iletisim-left {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .iletisim-info-block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .iletisim-info-block__label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+    }
+    
+    .iletisim-info-block__val {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .iletisim-info-block__val a {
+      transition: color 0.2s;
+    }
+    
+    .iletisim-info-block__val a:hover {
+      color: var(--accent);
+    }
+    
+    .iletisim-map-container {
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: var(--bg-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .iletisim-map-svg {
+      width: 80%;
+      height: auto;
+      opacity: 0.75;
+    }
+    
+    .wp-box {
+      margin-top: 10px;
+    }
+    
+    @media (max-width: 900px) {
+      .iletisim-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- WhatsApp floating button -->
+  <a class="wp-float" href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile ulaşın">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.862L0 24l6.333-1.501A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.946 0-3.76-.523-5.316-1.432l-.38-.222-3.742.887.95-3.614-.248-.396A9.791 9.791 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav__row">
+      <a href="/" class="nav__brand" aria-label="Ana Sayfa">
+        <img class="nav__logo" src="/logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
+      </a>
+      <nav class="nav__center" aria-label="Ana Menü">
+        <ul class="nav__links">
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
+              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__spacer" aria-hidden="true"></div>
+    </div>
+    <div class="nav__divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <div class="iletisim-hero">
+      <span class="iletisim-hero__label">İLETİŞİM</span>
+      <h1 class="iletisim-hero__h1">Bizimle<br><em class="gold-italic">bağlantı kurun.</em></h1>
+      <p class="iletisim-hero__sub">Sorularınız, iş ortaklığı talepleriniz veya yapay zeka otomasyon ihtiyaçlarınız için bize ulaşın. En kısa sürede dönüş sağlayacağız.</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="container">
+      <div class="iletisim-grid">
+        
+        <!-- Left Side: NAP Info + Custom Representational Map -->
+        <div class="iletisim-left">
+          
+          <div class="iletisim-info-block">
+            <span class="iletisim-info-block__label">E-posta</span>
+            <p class="iletisim-info-block__val">
+              <a href="mailto:info@dravoxai.com">info@dravoxai.com</a>
+            </p>
+          </div>
+
+          <div class="iletisim-info-block">
+            <span class="iletisim-info-block__label">Telefon &amp; WhatsApp</span>
+            <p class="iletisim-info-block__val">
+              <a href="tel:+905301139021">+90 530 113 90 21</a>
+            </p>
+            <div class="wp-box">
+              <a class="wp-btn" href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.862L0 24l6.333-1.501A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.946 0-3.76-.523-5.316-1.432l-.38-.222-3.742.887.95-3.614-.248-.396A9.791 9.791 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+                </svg>
+                WhatsApp'tan Anlık Mesaj Gönder
+              </a>
+            </div>
+          </div>
+
+          <div class="iletisim-info-block">
+            <span class="iletisim-info-block__label">Adres</span>
+            <p class="iletisim-info-block__val">
+              Pınar Mah. 4015. Sk., 68100 Dağılgan/Aksaray, Türkiye<br>
+              <span style="font-size:12px; color:var(--fg-dim)">Aksaray merkezli, Türkiye geneline uzaktan (remote) hizmet vermekteyiz.</span>
+            </p>
+          </div>
+
+          <!-- Abstract SVG representation of map for local look -->
+          <div class="iletisim-map-container" aria-hidden="true">
+            <svg class="iletisim-map-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid background representing coordinate systems -->
+              <path d="M10 0 L10 180 M50 0 L50 180 M90 0 L90 180 M130 0 L130 180 M170 0 L170 180 M210 0 L210 180 M250 0 L250 180 M290 0 L290 180" stroke="rgba(236,233,226,0.03)" stroke-width="1"/>
+              <path d="M0 20 L300 20 M0 60 L300 60 M0 100 L300 100 M0 140 L300 140" stroke="rgba(236,233,226,0.03)" stroke-width="1"/>
+              <!-- Outline representation of Turkey -->
+              <path d="M30 90 Q60 50 120 60 T220 70 T280 80 Q270 110 240 120 T150 125 T70 120 Z" stroke="rgba(236,233,226,0.12)" stroke-width="1.2" stroke-dasharray="2 2"/>
+              <!-- Aksaray location indicator (center-left in Turkey map) -->
+              <circle cx="130" cy="95" r="14" stroke="#D4B896" stroke-width="1" opacity="0.3" />
+              <circle cx="130" cy="95" r="6" stroke="#D4B896" stroke-width="1.5" />
+              <circle cx="130" cy="95" r="2" fill="#D4B896" />
+              <!-- Radar sweep effect line -->
+              <line x1="130" y1="95" x2="190" y2="55" stroke="#D4B896" stroke-width="1" opacity="0.4" />
+              <!-- Texts -->
+              <text x="148" y="98" fill="#D4B896" font-family="monospace" font-size="10" letter-spacing="0.1em">AKSARAY</text>
+            </svg>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Netlify Contact Form -->
+        <div class="conversation__right">
+          <form
+            class="conversation__form"
+            id="contact-page-form"
+            name="contact-page-form"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            novalidate
+          >
+            <input type="hidden" name="form-name" value="contact-page-form" />
+            <p class="demo-modal__honey" hidden>
+              <label>Bunu doldurmayın: <input name="bot-field" /></label>
+            </p>
+            <div class="form__field">
+              <label class="form__label" for="contact-name">Ad Soyad *</label>
+              <input class="form__input" type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Adınız Soyadınız" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="contact-email">E-posta *</label>
+              <input class="form__input" type="email" id="contact-email" name="email" required autocomplete="email" placeholder="ornek@sirket.com" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="contact-phone">Telefon</label>
+              <input class="form__input" type="tel" id="contact-phone" name="phone" autocomplete="tel" placeholder="+90 5XX XXX XX XX" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="contact-subject">Konu *</label>
+              <select class="form__input form__select" id="contact-subject" name="subject" required>
+                <option value="">Seçiniz</option>
+                <option value="Sesli AI Chat Botu">Sesli AI Chat Botu</option>
+                <option value="Çok Kanallı Mesajlaşma Paneli">Çok Kanallı Mesajlaşma Paneli</option>
+                <option value="Web Tasarımı">Web Tasarımı</option>
+                <option value="Otomasyon Sistemi">Otomasyon Sistemi</option>
+                <option value="CRM Altyapısı">CRM Altyapısı</option>
+                <option value="Diğer">Diğer</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="contact-message">Mesaj *</label>
+              <textarea class="form__input form__textarea" id="contact-message" name="message" required rows="5" placeholder="Projenizden veya ihtiyacınızdan bahsedin..."></textarea>
+            </div>
+            <button class="form__submit" type="submit">
+              <span class="form__submit-text">Mesaj Gönder</span>
+              <span class="form__submit-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="form__status" id="contact-page-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer section" role="contentinfo">
+      <div class="container">
+        <div class="footer__inner">
+          <p class="footer__copy">© 2026 Dravoxai. Tüm hakları saklıdır.</p>
+          <p class="footer__legal">Yapay Zeka Stüdyosu · Remote · Global</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/iletisim.js"></script>
+</body>
+</html>

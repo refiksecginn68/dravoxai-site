@@ -95,11 +95,24 @@
       </a>
       <nav class="nav__center" aria-label="Ana Menü">
         <ul class="nav__links">
-          <li><a href="#manifesto" class="nav__btn">Hakkımızda</a></li>
-          <li><a href="#hizmetler" class="nav__btn">Hizmetler</a></li>
           <li class="nav__dropdown-wrap">
             <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-              Sektörler
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="#hizmetler" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
               <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
                 <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
@@ -108,12 +121,27 @@
               <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
               <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
               <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
             </ul>
           </li>
-          <li><a href="#calisma" class="nav__btn">Projeler</a></li>
-          <li><a href="/blog" class="nav__btn">Blog</a></li>
-          <li><a href="#yaklasim" class="nav__btn">Yaklaşım</a></li>
-          <li><a href="#iletisim" class="nav__btn">İletişim</a></li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item" role="menuitem">Blog</a></li>
+              <li role="none"><a href="#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="nav__spacer" aria-hidden="true"></div>
@@ -178,38 +206,94 @@
     <!-- ── Page Stack ──────────────────────────────────────── -->
     <div class="page-stack">
 
-      <!-- Manifesto · Bölüm I -->
-      <section class="section" id="manifesto" aria-labelledby="manifesto-heading">
+      <!-- Entegrasyon Hub · Bölüm I -->
+      <section class="section" id="ozellikler-flow" aria-labelledby="flow-heading">
         <div class="container">
-          <p class="section__label reveal-text">Manifesto</p>
-          <h2 class="section__heading reveal-text" id="manifesto-heading">
-            Yapay zeka bir araç değil,<br><em>yeni bir düzen.</em>
+          <p class="section__label reveal-text">Entegrasyon Hub</p>
+          <h2 class="section__heading reveal-text" id="flow-heading">
+            Tüm kanallarınız.<br><em>Tek bir yapay zeka beyni.</em><br>Tüm sistemlerinizle entegre.
           </h2>
-          <div class="manifesto__grid">
-            <p class="manifesto__lede reveal-text">
-              Dravoxai, işletmelerin yapay zeka ile gerçek bir rekabet avantajı
-              elde etmesine yardımcı olan bir AI stüdyosudur. Az ama özenle
-              seçilmiş projelerle, derinlemesine çalışıyoruz.
-            </p>
-            <div class="manifesto__body reveal-text">
-              <p>
-                Çoğu şirket AI'ı yanlış soruyla başlatıyor: "Ne yapabiliriz?"
-                yerine "Ne yapmalıyız?" Biz önce ikinci soruyu cevaplıyoruz.
-                Hangi sürecin otomasyona gerçekten değer ürettiğini, hangi
-                veriyle ne tür bir modelin çalışabileceğini,
-                hangi entegrasyonun gerçek ROI getireceğini soruyoruz.
-              </p>
-              <p>
-                Sonra yapıyoruz. Hızla değil, doğru şekilde. Teslim ettiğimiz
-                sistemler altı ay sonra "neden çalışmıyor" sorusunu
-                doğurmuyor — çünkü altta yatan mimariye, veri kalitesine
-                ve gerçek kullanım senaryolarına göre tasarlanıyor.
-              </p>
-              <p>
-                Tamamen remote çalışıyor, dünya genelinde müşterilerle
-                iş birliği yapıyoruz. İletişim her zaman doğrudan
-                ve şeffaf.
-              </p>
+          
+          <div class="flow-container reveal-text">
+            <!-- SVG Connection Lines (Desktop only) -->
+            <svg class="flow-svg" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gold-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="rgba(212, 184, 150, 0.05)" />
+                  <stop offset="50%" stop-color="rgba(212, 184, 150, 0.7)" />
+                  <stop offset="100%" stop-color="rgba(212, 184, 150, 0.05)" />
+                </linearGradient>
+              </defs>
+              <!-- Left to Center lines -->
+              <path d="M 230, 50 C 310, 50 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--1" />
+              <path d="M 230, 125 C 310, 125 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--2" />
+              <path d="M 230, 200 H 390" stroke="url(#gold-line-grad)" class="flow-line flow-line--3" />
+              <path d="M 230, 275 C 310, 275 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--4" />
+              <path d="M 230, 350 C 310, 350 310, 200 390, 200" stroke="url(#gold-line-grad)" class="flow-line flow-line--5" />
+              
+              <!-- Center to Right lines -->
+              <path d="M 410, 200 C 490, 200 490, 50 570, 50" stroke="url(#gold-line-grad)" class="flow-line flow-line--6" />
+              <path d="M 410, 200 C 490, 200 490, 150 570, 150" stroke="url(#gold-line-grad)" class="flow-line flow-line--7" />
+              <path d="M 410, 200 C 490, 200 490, 250 570, 250" stroke="url(#gold-line-grad)" class="flow-line flow-line--8" />
+              <path d="M 410, 200 C 490, 200 490, 350 570, 350" stroke="url(#gold-line-grad)" class="flow-line flow-line--9" />
+            </svg>
+            
+            <!-- Column 1: Inputs / Channels -->
+            <div class="flow-column flow-column--left">
+              <h3 class="flow-column__title">İletişim Kanalları</h3>
+              <div class="flow-node">
+                <span class="flow-node__icon">📞</span>
+                <span class="flow-node__text">Sesli Çağrı / Telefon</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">💬</span>
+                <span class="flow-node__text">WhatsApp Business</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">📸</span>
+                <span class="flow-node__text">Instagram DM</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">🌐</span>
+                <span class="flow-node__text">Web Canlı Chat</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">✉️</span>
+                <span class="flow-node__text">E-Posta / Formlar</span>
+              </div>
+            </div>
+            
+            <!-- Column 2: The Core AI Brain -->
+            <div class="flow-column flow-column--center">
+              <div class="flow-brain-node">
+                <div class="brain-glow"></div>
+                <div class="brain-core">
+                  <span class="brain-logo">D</span>
+                  <span class="brain-title">Dravox AI Brain</span>
+                  <span class="brain-status">Aktif &amp; Otonom</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Column 3: Outputs / Integrations -->
+            <div class="flow-column flow-column--right">
+              <h3 class="flow-column__title">İş Sistemleri</h3>
+              <div class="flow-node">
+                <span class="flow-node__icon">📊</span>
+                <span class="flow-node__text">CRM (HubSpot/Salesforce)</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">📦</span>
+                <span class="flow-node__text">ERP &amp; Stok Yönetimi</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">📅</span>
+                <span class="flow-node__text">Randevu &amp; Takvim</span>
+              </div>
+              <div class="flow-node">
+                <span class="flow-node__icon">🗄️</span>
+                <span class="flow-node__text">Veritabanı / SQL</span>
+              </div>
             </div>
           </div>
         </div>
@@ -219,53 +303,139 @@
       <section class="section" id="hizmetler" aria-labelledby="hizmetler-heading">
         <div class="container">
           <p class="section__label reveal-text">Hizmetler</p>
-          <h2 class="section__heading reveal-text" id="hizmetler-heading">
-            Beş çözüm.<br><em>Tek bir hedef:</em><br>işinizi büyütmek.
-          </h2>
-          <ul class="practice__list" role="list">
-            <li class="practice__item reveal-text">
-              <span class="practice__num">001</span>
-              <div class="practice__content">
-                <h3 class="practice__name">Sesli AI Chat Botları</h3>
-                <span class="practice__desc">7/24 konuşan, öğrenen ve dönüştüren yapay zeka asistanları. Müşteriyle doğal diyalog, gerçek zamanlı yanıt, çok dilli destek.</span>
-                <a href="/sektorler/oteller-icin-ai" class="practice__sector-link">Oteller için Sesli AI →</a>
+          
+          <div class="services-grid-container">
+            <!-- Left Column: Header -->
+            <div class="services-header-col">
+              <h2 class="section__heading reveal-text" id="hizmetler-heading" style="margin-top:0;">
+                Beş çözüm.<br><em>Tek bir hedef:</em><br>işinizi büyütmek.
+              </h2>
+              <p class="reveal-text" style="color: var(--fg-dim); font-size: 14px; line-height: 1.6; margin-top: 20px; max-width: 28ch;">
+                Müşteri hizmetlerinden süreç otomasyonuna kadar, işletmenizin dijital ihtiyaçlarına yönelik tam kapsamlı çözümler sunuyoruz.
+              </p>
+            </div>
+            
+            <!-- Right Column: Services Grid Cards -->
+            <div class="services-cards-grid">
+              <!-- Card 1: Sesli AI Chat Botları -->
+              <div class="service-card reveal-text" id="hizmet-sesli">
+                <span class="service-card__num">001</span>
+                <div class="service-card__main">
+                  <h3 class="service-card__name">Sesli AI Chat Botları</h3>
+                  <p class="service-card__desc">7/24 konuşan, öğrenen ve dönüştüren yapay zeka asistanları. Müşteriyle doğal diyalog, gerçek zamanlı yanıt, çok dilli destek.</p>
+                </div>
+                <!-- Animated wave graphic -->
+                <div class="service-card__graphic">
+                  <svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="5" y="10" width="4" height="20" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.1s" />
+                    <rect x="15" y="5" width="4" height="30" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.2s" />
+                    <rect x="25" y="12" width="4" height="16" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.3s" />
+                    <rect x="35" y="2" width="4" height="36" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.4s" />
+                    <rect x="45" y="8" width="4" height="24" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.5s" />
+                    <rect x="55" y="15" width="4" height="10" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.6s" />
+                    <rect x="65" y="4" width="4" height="32" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.7s" />
+                    <rect x="75" y="12" width="4" height="16" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.8s" />
+                    <rect x="85" y="2" width="4" height="36" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 0.9s" />
+                    <rect x="95" y="10" width="4" height="20" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 1.0s" />
+                    <rect x="105" y="6" width="4" height="28" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 1.1s" />
+                    <rect x="115" y="14" width="4" height="12" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 1.2s" />
+                    <rect x="125" y="8" width="4" height="24" rx="2" fill="#D4B896" class="svg-anim-wave" style="animation-delay: 1.3s" />
+                  </svg>
+                </div>
+                <a href="/sektorler/oteller-icin-ai" class="service-card__sector-link">Oteller için Sesli AI →</a>
               </div>
-              <div class="practice__tags"><span>Ses</span><span>LLM</span><span>7/24</span></div>
-            </li>
-            <li class="practice__item reveal-text">
-              <span class="practice__num">002</span>
-              <div class="practice__content">
-                <h3 class="practice__name">Çok Kanallı Mesajlaşma Paneli</h3>
-                <span class="practice__desc">WhatsApp, Instagram, Messenger, Telegram, TikTok DM ve e-postanızı tek ekrandan yönetin. 0 kaçan mesaj, 3× daha fazla dönüşüm.</span>
-                <a href="/sektorler/restoranlar-icin-ai" class="practice__sector-link">Restoranlar için Çözüm →</a>
+              
+              <!-- Card 2: Çok Kanallı Mesajlaşma Paneli -->
+              <div class="service-card reveal-text" id="hizmet-panel">
+                <span class="service-card__num">002</span>
+                <div class="service-card__main">
+                  <h3 class="service-card__name">Çok Kanallı Mesajlaşma Paneli</h3>
+                  <p class="service-card__desc">WhatsApp, Instagram, Messenger, Telegram, TikTok DM ve e-postanızı tek ekrandan yönetin. 0 kaçan mesaj, 3× daha fazla dönüşüm.</p>
+                </div>
+                <!-- Animated nodes graphic -->
+                <div class="service-card__graphic">
+                  <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="60" cy="20" r="8" fill="none" stroke="#D4B896" stroke-width="1.5" class="svg-anim-pulse" />
+                    <circle cx="60" cy="20" r="3" fill="#D4B896" />
+                    
+                    <circle cx="20" cy="20" r="4" fill="#D4B896" opacity="0.6" class="svg-anim-float" style="animation-delay: 0.2s" />
+                    <circle cx="100" cy="20" r="4" fill="#D4B896" opacity="0.6" class="svg-anim-float" style="animation-delay: 0.5s" />
+                    <circle cx="60" cy="5" r="3" fill="#D4B896" opacity="0.4" class="svg-anim-float" style="animation-delay: 0.8s" />
+                    <circle cx="60" cy="35" r="3" fill="#D4B896" opacity="0.4" class="svg-anim-float" style="animation-delay: 1.1s" />
+                    
+                    <line x1="24" y1="20" x2="52" y2="20" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                    <line x1="96" y1="20" x2="68" y2="20" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                    <line x1="60" y1="8" x2="60" y2="12" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                    <line x1="60" y1="32" x2="60" y2="28" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                  </svg>
+                </div>
+                <a href="/sektorler/restoranlar-icin-ai" class="service-card__sector-link">Restoranlar için Çözüm →</a>
               </div>
-              <div class="practice__tags"><span>WhatsApp</span><span>Instagram</span><span>Panel</span></div>
-            </li>
-            <li class="practice__item reveal-text">
-              <span class="practice__num">003</span>
-              <div class="practice__content">
-                <h3 class="practice__name">Kusursuz Web Tasarımı</h3>
-                <span class="practice__desc">Dönüşüm odaklı, hızlı ve modern kurumsal web siteleri. Markanızın dijital yüzü — sıfırdan, özelleştirilmiş.</span>
+              
+              <!-- Card 3: Kusursuz Web Tasarımı -->
+              <div class="service-card reveal-text" id="hizmet-web">
+                <span class="service-card__num">003</span>
+                <div class="service-card__main">
+                  <h3 class="service-card__name">Kusursuz Web Tasarımı</h3>
+                  <p class="service-card__desc">Dönüşüm odaklı, hızlı ve modern kurumsal web siteleri. Markanızın dijital yüzü — sıfırdan, özelleştirilmiş.</p>
+                </div>
+                <!-- Animated browser mock graphic -->
+                <div class="service-card__graphic">
+                  <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-anim-float" aria-hidden="true">
+                    <rect x="5" y="5" width="90" height="40" rx="4" stroke="#D4B896" stroke-width="1.5" fill="rgba(25, 25, 27, 0.5)" />
+                    <line x1="5" y1="13" x2="95" y2="13" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" />
+                    <circle cx="12" cy="9" r="2" fill="rgba(212, 184, 150, 0.5)" />
+                    <circle cx="18" cy="9" r="2" fill="rgba(212, 184, 150, 0.5)" />
+                    <circle cx="24" cy="9" r="2" fill="rgba(212, 184, 150, 0.5)" />
+                    <rect x="15" y="20" width="30" height="8" rx="2" fill="rgba(212, 184, 150, 0.4)" />
+                    <rect x="55" y="20" width="30" height="18" rx="2" fill="rgba(212, 184, 150, 0.15)" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1" />
+                    <line x1="15" y1="34" x2="45" y2="34" stroke="rgba(212, 184, 150, 0.2)" stroke-width="1" />
+                  </svg>
+                </div>
               </div>
-              <div class="practice__tags"><span>UI/UX</span><span>SEO</span><span>Deploy</span></div>
-            </li>
-            <li class="practice__item reveal-text">
-              <span class="practice__num">004</span>
-              <div class="practice__content">
-                <h3 class="practice__name">Akıllı Otomasyon Sistemleri</h3>
-                <span class="practice__desc">Tekrarlayan süreçleri otomatikleştirin, zaman ve emek tasarrufu sağlayın. Workflow, RPA ve API entegrasyonları.</span>
+              
+              <!-- Card 4: Akıllı Otomasyon Sistemleri -->
+              <div class="service-card reveal-text" id="hizmet-otomasyon">
+                <span class="service-card__num">004</span>
+                <div class="service-card__main">
+                  <h3 class="service-card__name">Akıllı Otomasyon Sistemleri</h3>
+                  <p class="service-card__desc">Tekrarlayan süreçleri otomatikleştirin, zaman ve emek tasarrufu sağlayın. Workflow, RPA ve API entegrasyonları.</p>
+                </div>
+                <!-- Animated nodes / flow graphic -->
+                <div class="service-card__graphic">
+                  <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="10" y="10" width="20" height="20" rx="4" fill="rgba(212, 184, 150, 0.15)" stroke="rgba(212, 184, 150, 0.4)" stroke-width="1" />
+                    <circle cx="20" cy="20" r="3" fill="#D4B896" />
+                    
+                    <rect x="90" y="10" width="20" height="20" rx="4" fill="rgba(212, 184, 150, 0.15)" stroke="rgba(212, 184, 150, 0.4)" stroke-width="1" />
+                    <circle cx="100" cy="20" r="3" fill="#D4B896" />
+                    
+                    <path d="M 30 20 C 50 10, 70 30, 90 20" stroke="rgba(212, 184, 150, 0.3)" stroke-width="1.5" stroke-dasharray="4 4" class="svg-anim-pulse" />
+                  </svg>
+                </div>
               </div>
-              <div class="practice__tags"><span>Workflow</span><span>RPA</span><span>API</span></div>
-            </li>
-            <li class="practice__item reveal-text">
-              <span class="practice__num">005</span>
-              <div class="practice__content">
-                <h3 class="practice__name">Kapsamlı CRM Altyapıları</h3>
-                <span class="practice__desc">Müşteri verilerini kazanca dönüştürün. Özel CRM kurulumu, entegrasyonu ve otomasyon sistemi.</span>
+              
+              <!-- Card 5: Kapsamlı CRM Altyapıları -->
+              <div class="service-card reveal-text" id="hizmet-crm">
+                <span class="service-card__num">005</span>
+                <div class="service-card__main">
+                  <h3 class="service-card__name">Kapsamlı CRM Altyapıları</h3>
+                  <p class="service-card__desc">Müşteri verilerini kazanca dönüştürün. Özel CRM kurulumu, entegrasyonu ve otomasyon sistemi.</p>
+                </div>
+                <!-- Animated chart columns graphic -->
+                <div class="service-card__graphic">
+                  <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="10" y="25" width="8" height="15" rx="1" fill="#D4B896" opacity="0.4" class="svg-anim-pulse" style="animation-delay: 0.1s" />
+                    <rect x="25" y="15" width="8" height="25" rx="1" fill="#D4B896" opacity="0.6" class="svg-anim-pulse" style="animation-delay: 0.3s" />
+                    <rect x="40" y="5" width="8" height="35" rx="1" fill="#D4B896" class="svg-anim-pulse" style="animation-delay: 0.5s" />
+                    <rect x="55" y="20" width="8" height="20" rx="1" fill="#D4B896" opacity="0.8" class="svg-anim-pulse" style="animation-delay: 0.2s" />
+                    <rect x="70" y="10" width="8" height="30" rx="1" fill="#D4B896" opacity="0.7" class="svg-anim-pulse" style="animation-delay: 0.4s" />
+                    <rect x="85" y="18" width="8" height="22" rx="1" fill="#D4B896" opacity="0.5" class="svg-anim-pulse" style="animation-delay: 0.6s" />
+                  </svg>
+                </div>
               </div>
-              <div class="practice__tags"><span>CRM</span><span>Veri</span><span>Analitik</span></div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -339,7 +509,7 @@
       <!-- Yaklaşım · Bölüm IV -->
       <section class="section" id="yaklasim" aria-labelledby="yaklasim-heading">
         <div class="container">
-          <p class="section__label reveal-text">Yaklaşım</p>
+          <p class="section__label reveal-text">Nasıl Çalışır</p>
           <h2 class="section__heading reveal-text" id="yaklasim-heading">
             Nasıl çalışıyoruz.
           </h2>
@@ -420,10 +590,15 @@
               <form
                 class="conversation__form"
                 id="contact-form"
-                action="https://formspree.io/f/xojrogjd"
-                method="POST"
+                name="homepage-contact-form"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
                 novalidate
               >
+                <input type="hidden" name="form-name" value="homepage-contact-form" />
+                <p class="demo-modal__honey" hidden>
+                  <label>Bunu doldurmayın: <input name="bot-field" /></label>
+                </p>
                 <div class="form__field">
                   <label class="form__label" for="name">Ad Soyad</label>
                   <input
