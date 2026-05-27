@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t05 d05">
+  <title id="t05">E-Ticaret ve Pazaryeri Entegrasyonu</title>
+  <desc id="d05">Trendyol, Hepsiburada ve mağaza altyapısının dravokai paneline bağlandığını, ürünlerin sohbet üzerinden satıldığını gösteren infografik.</desc>
+
+  <defs>
+    <linearGradient id="bg05" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FF"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="shadow05" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+    <filter id="softShadow05" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="720" height="520" rx="24" fill="url(#bg05)"></rect>
+
+  <text x="40" y="60" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#6B7280">05 — E-TİCARET ENTEGRASYONU</text>
+  <text x="40" y="92" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Sepetten sohbete, sohbetten satışa.</text>
+
+  
+  <g font-family="Inter, sans-serif">
+    <g filter="url(#softShadow05)">
+      <rect x="40" y="140" width="160" height="60" rx="14" fill="#FFFFFF"></rect>
+      <rect x="58" y="158" width="24" height="24" rx="6" fill="#FF6900"></rect>
+      <text x="70" y="174" font-size="11" font-weight="700" text-anchor="middle" fill="#FFFFFF">T</text>
+      <text x="92" y="166" font-size="12" font-weight="600" fill="#1F2937">Trendyol</text>
+      <text x="92" y="181" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#22C55E">● BAĞLI</text>
+    </g>
+
+    <g filter="url(#softShadow05)">
+      <rect x="40" y="212" width="160" height="60" rx="14" fill="#FFFFFF"></rect>
+      <rect x="58" y="230" width="24" height="24" rx="6" fill="#FF6000"></rect>
+      <text x="70" y="246" font-size="11" font-weight="700" text-anchor="middle" fill="#FFFFFF">H</text>
+      <text x="92" y="238" font-size="12" font-weight="600" fill="#1F2937">Hepsiburada</text>
+      <text x="92" y="253" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#22C55E">● BAĞLI</text>
+    </g>
+
+    <g filter="url(#softShadow05)">
+      <rect x="40" y="284" width="160" height="60" rx="14" fill="#FFFFFF"></rect>
+      <rect x="58" y="302" width="24" height="24" rx="6" fill="#96BF48"></rect>
+      <text x="70" y="318" font-size="11" font-weight="700" text-anchor="middle" fill="#FFFFFF">S</text>
+      <text x="92" y="310" font-size="12" font-weight="600" fill="#1F2937">Shopify</text>
+      <text x="92" y="325" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#22C55E">● BAĞLI</text>
+    </g>
+
+    <g filter="url(#softShadow05)">
+      <rect x="40" y="356" width="160" height="60" rx="14" fill="#FFFFFF"></rect>
+      <rect x="58" y="374" width="24" height="24" rx="6" fill="#7E4FFF"></rect>
+      <text x="70" y="390" font-size="11" font-weight="700" text-anchor="middle" fill="#FFFFFF">W</text>
+      <text x="92" y="382" font-size="12" font-weight="600" fill="#1F2937">WooCommerce</text>
+      <text x="92" y="397" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#F59E0B">○ HAZIR</text>
+    </g>
+  </g>
+
+  
+  <g filter="url(#shadow05)">
+    <rect x="260" y="220" width="180" height="110" rx="20" fill="#2752E8"></rect>
+    <rect x="278" y="240" width="36" height="36" rx="10" fill="#FFFFFF"></rect>
+    <text x="296" y="266" font-family="Inter, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#2752E8">d</text>
+    <text x="324" y="252" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">dravokai hub</text>
+    <text x="324" y="270" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#FFFFFF" opacity="0.7">1.247 ÜRÜN SENKRON</text>
+
+    <rect x="278" y="290" width="144" height="26" rx="13" fill="#FFFFFF" opacity="0.15"></rect>
+    <circle cx="294" cy="303" r="4" fill="#22C55E"></circle>
+    <text x="306" y="307" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#FFFFFF">CANLI SENKRON · 8 SN</text>
+  </g>
+
+  
+  <g fill="none" stroke="#A6B4DE" stroke-width="1.5" stroke-dasharray="4 5">
+    <path d="M200 170 C 240 170, 240 250, 260 260"></path>
+    <path d="M200 242 C 240 242, 240 268, 260 270"></path>
+    <path d="M200 314 C 240 314, 240 290, 260 285"></path>
+    <path d="M200 386 C 240 386, 240 305, 260 295"></path>
+  </g>
+
+  
+  <g fill="none" stroke="#22C55E" stroke-width="2" stroke-dasharray="4 5">
+    <path d="M440 275 C 480 275, 480 290, 520 290"></path>
+  </g>
+  <polygon points="528,290 519,285 519,295" fill="#22C55E"></polygon>
+
+  
+  <g filter="url(#shadow05)">
+    <rect x="510" y="120" width="170" height="340" rx="20" fill="#FFFFFF"></rect>
+    
+    <rect x="510" y="120" width="170" height="44" rx="20" fill="#F4F7FF"></rect>
+    <rect x="510" y="146" width="170" height="18" fill="#F4F7FF"></rect>
+    <circle cx="528" cy="142" r="11" fill="#25D366"></circle>
+    <path d="M523 142a5 5 0 1 1 10 0 5 5 0 0 1-7 4.5l-3 .8.8-3a5 5 0 0 1-.8-2.3z" fill="#FFFFFF"></path>
+    <text x="544" y="139" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1F2937">Ayşe — WhatsApp</text>
+    <text x="544" y="152" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#22C55E">● ÇEVRİMİÇİ</text>
+
+    
+    <rect x="524" y="180" width="120" height="36" rx="10" fill="#F4F7FF"></rect>
+    <text x="534" y="196" font-family="Inter, sans-serif" font-size="9" fill="#1F2937">Bu ürün stokta var mı?</text>
+    <text x="534" y="208" font-family="Inter, sans-serif" font-size="9" fill="#1F2937">Bedeni M lütfen.</text>
+
+    
+    <g filter="url(#softShadow05)">
+      <rect x="538" y="226" width="140" height="80" rx="12" fill="#FFFFFF" stroke="#EEF2FA"></rect>
+      <rect x="546" y="234" width="36" height="64" rx="8" fill="#E5DEFF"></rect>
+      
+      <path d="M553 250 l4 -4 h8 l4 4 v8 l-4 -2 v18 h-8 v-18 l-4 2 z" fill="#7E4FFF"></path>
+      <text x="590" y="248" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1F2937">Basic T-Shirt</text>
+      <text x="590" y="262" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">BEDEN M · STOKTA</text>
+      <text x="590" y="282" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#2752E8">99,00 ₺</text>
+      <rect x="590" y="288" width="80" height="14" rx="7" fill="#22C55E"></rect>
+      <text x="630" y="298" font-family="JetBrains Mono, monospace" font-size="8" font-weight="700" letter-spacing="1.4" text-anchor="middle" fill="#FFFFFF">SEPETE EKLE</text>
+    </g>
+
+    
+    <rect x="524" y="316" width="140" height="36" rx="10" fill="#2752E8"></rect>
+    <text x="534" y="332" font-family="Inter, sans-serif" font-size="9" fill="#FFFFFF">Tabii Ayşe Hanım,</text>
+    <text x="534" y="344" font-family="Inter, sans-serif" font-size="9" fill="#FFFFFF">size sepet linkini gönderdim.</text>
+
+    
+    <rect x="524" y="364" width="140" height="36" rx="10" fill="#F4F7FF"></rect>
+    <circle cx="538" cy="382" r="8" fill="#22C55E"></circle>
+    <path d="M534 382l3 3 6-6" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+    <text x="552" y="380" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#1F2937">Sipariş oluşturuldu</text>
+    <text x="552" y="392" font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1.2" fill="#6B7280">#DRV-4827 · 99,00₺</text>
+
+    
+    <rect x="524" y="416" width="140" height="28" rx="14" fill="#F4F7FF"></rect>
+    <text x="534" y="434" font-family="Inter, sans-serif" font-size="9" fill="#9CA3AF">Mesaj yazın…</text>
+  </g>
+
+  
+  <g filter="url(#softShadow05)">
+    <rect x="450" y="430" width="120" height="32" rx="16" fill="#22C55E"></rect>
+    <text x="465" y="450" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" letter-spacing="1.4" fill="#FFFFFF">Yükleniyor %49</text>
+  </g>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t01 d01">
+  <title id="t01">Tümleşik İletişim Paneli</title>
+  <desc id="d01">WhatsApp, Instagram DM, Facebook Messenger ve Telegram mesajlarının dravokai panelinde birleştiğini gösteren infografik.</desc>
+
+  <defs>
+    <linearGradient id="bg01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FF"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="shadow01" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+    <filter id="softShadow01" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1B2A6B" flood-opacity="0.08"></feDropShadow>
+    </filter>
+    <linearGradient id="ig01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F58529"></stop>
+      <stop offset=".5" stop-color="#DD2A7B"></stop>
+      <stop offset="1" stop-color="#8134AF"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <rect width="720" height="520" rx="24" fill="url(#bg01)"></rect>
+
+  
+  <circle cx="120" cy="80" r="28" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+  <circle cx="640" cy="450" r="34" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+  <circle cx="60" cy="420" r="6" fill="#7E4FFF" opacity="0.5"></circle>
+  <circle cx="690" cy="120" r="5" fill="#2752E8" opacity="0.5"></circle>
+
+  
+  
+  <g filter="url(#softShadow01)">
+    <rect x="40" y="120" width="180" height="64" rx="18" fill="#FFFFFF"></rect>
+    <circle cx="74" cy="152" r="20" fill="#25D366"></circle>
+    <path d="M64 152c0-5.5 4.5-10 10-10s10 4.5 10 10c0 1.7-.4 3.2-1.1 4.6l1.1 4.4-4.6-1.1c-1.4.7-2.9 1.1-4.4 1.1-5.5 0-10-4.5-10-9z" fill="#FFFFFF"></path>
+    <text x="106" y="148" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1F2937">WhatsApp</text>
+    <text x="106" y="166" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#6B7280">+90 5XX 000</text>
+  </g>
+
+  
+  <g filter="url(#softShadow01)">
+    <rect x="40" y="208" width="180" height="64" rx="18" fill="#FFFFFF"></rect>
+    <rect x="54" y="132" width="40" height="40" rx="10" fill="url(#ig01)" transform="translate(0 80)"></rect>
+    <circle cx="74" cy="232" r="8" fill="none" stroke="#FFFFFF" stroke-width="2"></circle>
+    <circle cx="86" cy="220" r="1.6" fill="#FFFFFF"></circle>
+    <text x="106" y="236" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1F2937">Instagram DM</text>
+    <text x="106" y="254" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#6B7280">@dravokai</text>
+  </g>
+
+  
+  <g filter="url(#softShadow01)">
+    <rect x="40" y="296" width="180" height="64" rx="18" fill="#FFFFFF"></rect>
+    <circle cx="74" cy="328" r="20" fill="#0084FF"></circle>
+    <path d="M74 318c-5.5 0-10 4-10 9 0 2.7 1.4 5.1 3.6 6.7v3.7l3.3-1.8c.9.3 1.9.4 3.1.4 5.5 0 10-4 10-9s-4.5-9-10-9z" fill="#FFFFFF"></path>
+    <text x="106" y="324" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1F2937">Messenger</text>
+    <text x="106" y="342" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#6B7280">facebook.com</text>
+  </g>
+
+  
+  <g filter="url(#softShadow01)">
+    <rect x="40" y="384" width="180" height="64" rx="18" fill="#FFFFFF"></rect>
+    <circle cx="74" cy="416" r="20" fill="#2AABEE"></circle>
+    <path d="M65 415l16-6c.7-.3 1.4.4 1.1 1.1l-3 12c-.3.8-1.2 1-1.8.4l-3.6-2.9-2 1.9c-.4.4-1.1.1-1.1-.4l.1-3 6.7-6.1-8.2 4.7-3-1c-.7-.2-.7-1.2 0-1.5z" fill="#FFFFFF"></path>
+    <text x="106" y="412" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1F2937">Telegram</text>
+    <text x="106" y="430" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.2" fill="#6B7280">t.me/dravokai</text>
+  </g>
+
+  
+  <g fill="none" stroke="#A6B4DE" stroke-width="1.5" stroke-dasharray="4 5">
+    <path d="M220 152 C 280 152, 280 220, 360 230"></path>
+    <path d="M220 240 C 290 240, 290 250, 360 250"></path>
+    <path d="M220 328 C 290 328, 290 270, 360 270"></path>
+    <path d="M220 416 C 290 416, 290 300, 360 290"></path>
+  </g>
+
+  
+  <g filter="url(#shadow01)">
+    <rect x="360" y="80" width="320" height="400" rx="20" fill="#FFFFFF"></rect>
+
+    
+    <rect x="360" y="80" width="320" height="50" rx="20" fill="#2752E8"></rect>
+    <rect x="360" y="110" width="320" height="20" fill="#2752E8"></rect>
+    
+    <rect x="378" y="98" width="22" height="22" rx="6" fill="#FFFFFF" opacity="0.95"></rect>
+    <text x="389" y="114" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#2752E8">d</text>
+    <text x="410" y="113" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" letter-spacing="1">dravokai panel</text>
+    
+    <rect x="530" y="98" width="130" height="22" rx="11" fill="#FFFFFF" opacity="0.20"></rect>
+    <circle cx="544" cy="109" r="3.5" fill="none" stroke="#FFFFFF" stroke-width="1.4"></circle>
+
+    
+    <g font-family="Inter, sans-serif" fill="#1F2937">
+
+      
+      <rect x="372" y="146" width="296" height="58" rx="12" fill="#F4F7FF"></rect>
+      <circle cx="396" cy="175" r="16" fill="#7E4FFF"></circle>
+      <text x="396" y="180" font-size="13" font-weight="600" text-anchor="middle" fill="#FFFFFF">MD</text>
+      <text x="422" y="170" font-size="11" font-weight="600">Meltem Denizkızı</text>
+      <text x="422" y="187" font-size="9" fill="#6B7280">Merhaba, sitenizden…</text>
+      <circle cx="640" cy="175" r="14" fill="#25D366"></circle>
+      <path d="M633 175l4 4 8-8" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      <text x="660" y="172" font-size="8" font-family="JetBrains Mono, monospace" text-anchor="end" fill="#9CA3AF">12:23</text>
+
+      
+      <rect x="372" y="210" width="296" height="58" rx="12" fill="#FFFFFF" stroke="#EEF2FA" stroke-width="1"></rect>
+      <circle cx="396" cy="239" r="16" fill="#0084FF"></circle>
+      <text x="396" y="244" font-size="13" font-weight="600" text-anchor="middle" fill="#FFFFFF">ZT</text>
+      <text x="422" y="234" font-size="11" font-weight="600">Zeliha Tomruk</text>
+      <text x="422" y="251" font-size="9" fill="#6B7280">Yazıyor…</text>
+      <circle cx="640" cy="239" r="9" fill="#E1306C"></circle>
+      <text x="640" y="243" font-size="9" font-weight="700" text-anchor="middle" fill="#FFFFFF">2</text>
+
+      
+      <rect x="372" y="274" width="296" height="58" rx="12" fill="#FFFFFF" stroke="#EEF2FA" stroke-width="1"></rect>
+      <circle cx="396" cy="303" r="16" fill="#2AABEE"></circle>
+      <text x="396" y="308" font-size="13" font-weight="600" text-anchor="middle" fill="#FFFFFF">YA</text>
+      <text x="422" y="298" font-size="11" font-weight="600">Yasemin Aksoy</text>
+      <text x="422" y="315" font-size="9" fill="#6B7280">Aktif — Telegram</text>
+      <text x="660" y="299" font-size="8" font-family="JetBrains Mono, monospace" text-anchor="end" fill="#9CA3AF">11:58</text>
+
+      
+      <rect x="372" y="338" width="296" height="58" rx="12" fill="#FFFFFF" stroke="#EEF2FA" stroke-width="1"></rect>
+      <circle cx="396" cy="367" r="16" fill="#25D366"></circle>
+      <text x="396" y="372" font-size="13" font-weight="600" text-anchor="middle" fill="#FFFFFF">TÖ</text>
+      <text x="422" y="362" font-size="11" font-weight="600">Taner Özyiğit</text>
+      <text x="422" y="379" font-size="9" fill="#6B7280">Bekleniyor…</text>
+      <rect x="624" y="358" width="36" height="18" rx="9" fill="#FEF3C7"></rect>
+      <text x="642" y="370" font-size="8" font-weight="700" text-anchor="middle" fill="#92400E">YENİ</text>
+
+      
+      <rect x="372" y="412" width="140" height="52" rx="12" fill="#F4F7FF"></rect>
+      <text x="384" y="431" font-size="9" letter-spacing="1.2" font-family="JetBrains Mono, monospace" fill="#6B7280">AKTİF SOHBET</text>
+      <text x="384" y="453" font-size="22" font-weight="700" fill="#2752E8">147</text>
+
+      <rect x="524" y="412" width="144" height="52" rx="12" fill="#F4F7FF"></rect>
+      <text x="536" y="431" font-size="9" letter-spacing="1.2" font-family="JetBrains Mono, monospace" fill="#6B7280">ORT. CEVAP</text>
+      <text x="536" y="453" font-size="22" font-weight="700" fill="#7E4FFF">11<tspan font-size="13" fill="#6B7280" font-weight="400"> sn</tspan></text>
+    </g>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace">
+    <text x="40" y="60" font-size="10" letter-spacing="2" fill="#6B7280">01 — TÜMLEŞİK İLETİŞİM</text>
+  </g>
+  <text x="40" y="92" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Tek panelden, dört kanal.</text>
+</svg>
