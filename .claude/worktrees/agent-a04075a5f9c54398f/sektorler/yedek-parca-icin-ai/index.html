@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Yedek Parça & Otomotiv İçin Yapay Zeka Çözümleri | Dravoxai</title>
+  <meta name="description" content="Otomotiv ve yedek parça distribütörleri için AI: Şasi (VIN) ve fotoğraftan parça tespiti, B2B WhatsApp sipariş otomasyonu, ERP entegrasyonu." />
+  <link rel="canonical" href="https://dravoxai.com/sektorler/yedek-parca-icin-ai" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yedek Parça & Otomotiv İçin Yapay Zeka Çözümleri | Dravoxai" />
+  <meta property="og:description" content="Otomotiv ve yedek parça distribütörleri için AI: Şasi (VIN) ve fotoğraftan parça tespiti, B2B WhatsApp sipariş otomasyonu, ERP entegrasyonu." />
+  <meta property="og:url" content="https://dravoxai.com/sektorler/yedek-parca-icin-ai" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Yedek Parça İçin Yapay Zeka Çözümleri",
+    "provider": {
+      "@type": "Organization",
+      "name": "Dravoxai",
+      "url": "https://dravoxai.com",
+      "telephone": "+905301139021",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aksaray",
+        "addressCountry": "TR"
+      }
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Türkiye"
+    },
+    "description": "Yedek parça distribütörleri ve otomotiv firmaları için şasi (VIN) numarası veya parça fotoğrafı üzerinden otonom parça tespiti, B2B WhatsApp sipariş botları ve ERP entegrasyonları."
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://dravoxai.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Sektörler", "item": "https://dravoxai.com/sektorler"},
+      {"@type": "ListItem", "position": 3, "name": "Yedek Parça İçin AI"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Şasi (VIN) numarasından parça tespiti nasıl yapılıyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Müşteri veya bayi şasi numarasını (VIN) yazarak veya fotoğrafını çekerek WhatsApp üzerinden gönderir. Yapay zeka OCR teknolojisi ile şasi numarasını okur, markanın şasi katalog veritabanına bağlanarak araca uyumlu OEM parça kodlarını saniyeler içinde listeler."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Katalog güncellemeleri AI sistemine nasıl yansıyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ERP veya katalog veritabanınıza (Logo, Nebim, T-Soft vb.) doğrudan API bağlantısı kuruyoruz. Katalogda yaptığınız fiyat, stok ve ürün güncellemeleri anlık olarak yapay zekaya aktarılır ve asistan her zaman güncel verilerle konuşur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Logo, Nebim veya Mikro ERP sistemleri ile entegrasyon mümkün mü?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. n8n otomasyon motorumuz ve özel API köprülerimiz sayesinde Logo Tiger/Go3, Nebim V3, Mikro, SAP ve benzeri tüm büyük ERP yazılımlarıyla çift yönlü senkronizasyon sağlıyoruz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Yanlış parça tespiti durumunda sorumluluk kime ait?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yapay zeka asistanı, şasi ve katalog eşleşmesinden kesin olarak emin olmadığı durumlarda inisiyatif almaz ve 'Bu şasi için 2 farklı disk seçeneği çıkıyor, lütfen teyit edin' diyerek görüşmeyi yedek parça uzmanınıza aktarır. Bu sayede hatalı gönderim riski minimize edilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "B2B bayilere özel fiyatlandırma tanımlanabilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Bayi veya müşteri sisteme giriş yaptığında veya telefon numarası eşleştiğinde, yapay zeka asistanı o bayinin ERP'deki iskonto oranını ve özel fiyat listesini çekerek doğrudan bayiye özel fiyat teklifi sunar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kurulum süresi ne kadardır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kataloğunuzun boyutuna ve ERP altyapınıza bağlı olarak 3-5 hafta sürer. İlk aşamada veri yapısı analiz edilir, n8n iş akışları tasarlanır ve test ortamında şasi doğruluk oranları denetlenerek yayına alınır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "API limitleri ve ek maliyetler nelerdir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VAPI, ElevenLabs (sesli aramalar için) ve WhatsApp Business API (mesajlaşmalar için) kullanımına bağlı olarak düşük dakika/mesaj başı maliyetler mevcuttur. Kurulum öncesi tüm maliyet simülasyonunu hazırlayarak tarafınıza sunuyoruz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hizmet bedeli ve fiyatlandırma modeliniz nasıldır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tek seferlik sistem kurulum/entegrasyon bedeli ve sistemin büyüklüğüne göre aylık bakım-destek bedeli şeklinde çalışıyoruz. Detaylı fiyatlandırma için ücretsiz keşif görüşmesi gerçekleştirebiliriz."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="/src/oteller.css" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- WhatsApp floating button -->
+  <a class="wp-float" href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile ulaşın">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.862L0 24l6.333-1.501A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.946 0-3.76-.523-5.316-1.432l-.38-.222-3.742.887.95-3.614-.248-.396A9.791 9.791 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav__row">
+      <a href="/" class="nav__brand" aria-label="Ana Sayfa">
+        <img class="nav__logo" src="/logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
+      </a>
+      <nav class="nav__center" aria-label="Ana Menü">
+        <ul class="nav__links">
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
+              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__spacer" aria-hidden="true"></div>
+    </div>
+    <div class="nav__divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ── BÖLÜM 1: HERO ─────────────────────────────────────────── -->
+    <section class="otel-hero" id="hero" aria-label="Hero">
+      <div class="otel-hero__bg" aria-hidden="true"></div>
+
+      <div class="container otel-hero__container">
+        <div class="otel-hero__content">
+          <span class="hero-anim otel-hero__label">OTOMOTİV & YEDEK PARÇA</span>
+          <h1 class="otel-hero__h1">
+            <span class="hero-word">Yedek</span>
+            <span class="hero-word">parça</span>
+            <span class="hero-word">operasyonlarında</span>
+            <span class="hero-word"><em class="gold-italic">hız</em></span>
+            <span class="hero-word">ve</span>
+            <span class="hero-word"><em class="gold-italic">doğruluk</em></span>
+            <span class="hero-word">devrimi.</span>
+          </h1>
+          <p class="hero-anim otel-hero__sub">
+            Kataloğunuzdaki on binlerce yedek parçayı, karmaşık OEM kodlarını, şasi numaralarını (VIN) ve parça uyumluluklarını yapay zeka ile saniyeler içinde çözün. B2B bayilerinizden perakende müşterilerinize kadar sipariş süreçlerinizi otonomlaştırın.
+          </p>
+          <div class="hero-anim otel-hero__actions">
+            <button class="cta-btn-primary" id="open-demo-modal">Canlı Test Et</button>
+            <a href="#demo-form" class="cta-btn-secondary">Keşif Görüşmesi Planla</a>
+            <a href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">WhatsApp'tan Yaz</a>
+          </div>
+          <p class="hero-anim otel-hero__social-proof">
+            Otomotiv distribütörleri, yedek parça üreticileri ve büyük perakende depoları için tasarlandı.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 2: MANİFESTO ─────────────────────────────────────── -->
+    <section class="otel-manifesto section" id="manifesto" aria-label="Manifesto">
+      <div class="container">
+        <div class="otel-manifesto__grid">
+          <div class="otel-manifesto__left reveal-text">
+            <h2>Kataloğunuz büyüdükçe hatalar ve gecikmeler artar.</h2>
+          </div>
+          <div class="otel-manifesto__right reveal-text">
+            <p>
+              On binlerce OEM kodu, şasi numaraları, araç model yılları ve alternatif parça seçenekleri arasında doğru parçayı tespit etmek yüksek uzmanlık gerektirir. Müşterileriniz yanlış sipariş verdiğinde iade süreçleriyle uğraşır, B2B bayileriniz teklif beklerken zaman kaydeder ve siz doğrudan ciro kaybedersiniz.
+            </p>
+            <p class="gold-italic">
+              Dravoxai AI Otomotiv Asistanı, tüm kataloğunuzu, uyumluluk tablolarınızı ve şasi şemalarınızı öğrenerek hatasız parça tespiti yapar ve siparişleri anında hazırlar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 3: ÇÖZÜMLER ──────────────────────────────────────── -->
+    <section class="otel-solutions section" id="cozumler" aria-label="Çözümlerimiz">
+      <div class="container">
+        <header class="section-header reveal-text">
+          <span class="section-label">ÇÖZÜMLERİMİZ</span>
+          <h2>Yedek parça zincirini yapay zeka ile otonomlaştırın.</h2>
+        </header>
+
+        <div class="otel-solutions__grid">
+          <!-- Kart 001 -->
+          <article class="sol-card reveal-text">
+            <span class="sol-card__num">001</span>
+            <h3 class="sol-card__title">Şasi (VIN) ve Fotoğraftan Parça Tespiti</h3>
+            <p class="sol-card__desc">
+              Kullanıcılar şasi numarasını yazdığında veya şasi etiketinin fotoğrafını gönderdiğinde yapay zeka şasiyi çözümler, modele uyumlu fren balatası, disk, filtre gibi tüm parça seçeneklerini milisaniyeler içinde bulur.
+            </p>
+            <p class="sol-card__highlight">Fotoğraftan görsel analiz ve otomatik OEM eşleme.</p>
+            <div class="sol-card__tags">
+              <span class="sol-card__tag">VIN Decoding</span>
+              <span class="sol-card__tag">Computer Vision</span>
+              <span class="sol-card__tag">OEM Database</span>
+            </div>
+          </article>
+
+          <!-- Kart 002 -->
+          <article class="sol-card reveal-text">
+            <span class="sol-card__num">002</span>
+            <h3 class="sol-card__title">B2B WhatsApp Sipariş ve Teklif Otomasyonu</h3>
+            <p class="sol-card__desc">
+              Bayileriniz telefonla aramak veya sisteme girip arama yapmak yerine, WhatsApp üzerinden doğrudan parçayı sorar. AI anlık stok durumunu kontrol eder, bayiye özel iskonto oranını ERP'den çeker ve saniyeler içinde teklif sunar.
+            </p>
+            <p class="sol-card__highlight">Aynı anda binlerce bayiden teklif alma ve sipariş onaylama.</p>
+            <div class="sol-card__tags">
+              <span class="sol-card__tag">WhatsApp API</span>
+              <span class="sol-card__tag">n8n Entegrasyonu</span>
+              <span class="sol-card__tag">B2B İskonto</span>
+            </div>
+          </article>
+
+          <!-- Kart 003 -->
+          <article class="sol-card reveal-text">
+            <span class="sol-card__num">003</span>
+            <h3 class="sol-card__title">Akıllı Muadil ve Alternatif Eşleme</h3>
+            <p class="sol-card__desc">
+              Aranan orijinal parçanın stokta olmadığı durumlarda yapay zeka, sistemdeki çapraz referans (cross-reference) tablolarına bakarak uyumlu muadil markaları, fiyat farklarını ve stok miktarlarını bayiye akıllıca önerir.
+            </p>
+            <p class="sol-card__highlight">Stoksuzluk kaynaklı satış kayıplarını sıfırlayan alternatif mantığı.</p>
+            <div class="sol-card__tags">
+              <span class="sol-card__tag">Cross Reference</span>
+              <span class="sol-card__tag">Stok Önerisi</span>
+              <span class="sol-card__tag">Up-selling</span>
+            </div>
+          </article>
+
+          <!-- Kart 004 -->
+          <article class="sol-card reveal-text">
+            <span class="sol-card__num">004</span>
+            <h3 class="sol-card__title">ERP ve Depo Otomasyon Entegrasyonu</h3>
+            <p class="sol-card__desc">
+              Yapay zeka asistanı üzerinden onaylanan teklifler, hiçbir insan müdahalesi gerektirmeden doğrudan Logo, Nebim, T-Soft veya kullandığınız özel ERP sistemine sipariş, fiş veya fatura kaydı olarak otomatik işlenir.
+            </p>
+            <p class="sol-card__highlight">Hatalı veri girişi riskini sıfıra indiren otonom veri yolu.</p>
+            <div class="sol-card__tags">
+              <span class="sol-card__tag">ERP Sync</span>
+              <span class="sol-card__tag">Logo & Nebim API</span>
+              <span class="sol-card__tag">SQL Server</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 4: SÜREÇ ────────────────────────────────────────── -->
+    <section class="otel-process section" id="surec" aria-label="Kurulum Sürecimiz">
+      <div class="container">
+        <header class="section-header reveal-text">
+          <span class="section-label">İŞ AKIŞI</span>
+          <h2>3 Adımda Canlıya Geçiş</h2>
+        </header>
+
+        <div class="otel-process__steps">
+          <div class="process-step reveal-text">
+            <div class="process-step__header">
+              <span class="process-step__num">01</span>
+              <h3>Katalog ve Altyapı Keşfi</h3>
+            </div>
+            <p class="process-step__desc">
+              Mevcut parça kataloğunuzun veri yapısı (OEM kodları, uyumluluk tabloları, muadiller) ve kullandığınız ERP altyapısı (API imkanları) incelenir. Yol haritası çıkarılır.
+            </p>
+            <p class="process-step__output">Çıktı: Entegrasyon Şeması ve Proje Kapsam Raporu</p>
+          </div>
+
+          <div class="process-step reveal-text">
+            <div class="process-step__header">
+              <span class="process-step__num">02</span>
+              <h3>Modellerin Eğitilmesi & API Köprüleri</h3>
+            </div>
+            <p class="process-step__desc">
+              Yapay zeka asistanı, otomotiv terminolojisi ve sizin parça veritabanınızla eğitilir. n8n üzerinde ERP, WhatsApp ve şasi sorgu API köprüleri kurulur, test ortamında doğrulanır.
+            </p>
+            <p class="process-step__output">Çıktı: Test Aşamasındaki AI Asistan Altyapısı</p>
+          </div>
+
+          <div class="process-step reveal-text">
+            <div class="process-step__header">
+              <span class="process-step__num">03</span>
+              <h3>Yayın ve Canlı Takip</h3>
+            </div>
+            <p class="process-step__desc">
+              Sistem B2B WhatsApp hattınızda veya web sitenizde yayına alınır. İlk siparişler ve parça sorgu başarı oranları canlı izleme paneli üzerinden takip edilerek ince ayarlar yapılır.
+            </p>
+            <p class="process-step__output">Çıktı: Aktif Otonom Sipariş Alım Kanalı</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 5: ETKİ ─────────────────────────────────────────── -->
+    <section class="otel-stats section" id="etki" aria-label="Operasyonel Etki">
+      <div class="container">
+        <header class="section-header reveal-text">
+          <span class="section-label">OPERASYONEL ETKİ</span>
+          <h2>Rakamlarla Yedek Parça Yapay Zekası</h2>
+        </header>
+
+        <div class="otel-stats__grid">
+          <div class="stat-card reveal-text">
+            <span class="stat-card__val">7/24</span>
+            <p class="stat-card__label">Kesintisiz parça sorgulama, fiyat teklifi alma ve otonom sipariş girişi imkanı.</p>
+          </div>
+          <div class="stat-card reveal-text">
+            <span class="stat-card__val">3 SN</span>
+            <p class="stat-card__label">Şasi okuma, OEM kod kontrolü ve ERP stok sorgusunun tamamlanma süresi.</p>
+          </div>
+          <div class="stat-card reveal-text">
+            <span class="stat-card__val">%99</span>
+            <p class="stat-card__label">Kataloğa kayıtlı araç modelleri ve parça eşleştirmelerindeki doğruluk oranı.</p>
+          </div>
+          <div class="stat-card reveal-text">
+            <span class="stat-card__val">%100</span>
+            <p class="stat-card__label">Sipariş verilerinin ERP (Logo, Nebim vb.) sistemine insansız ve hatasız işlenmesi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 6: SSS ──────────────────────────────────────────── -->
+    <section class="faq section" id="sss" aria-label="Sıkça Sorulan Sorular">
+      <div class="container">
+        <header class="section-header reveal-text">
+          <span class="section-label">DETAYLAR</span>
+          <h2>Sıkça Sorulan Sorular</h2>
+        </header>
+
+        <div class="faq__list">
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Şasi (VIN) numarasından parça tespiti nasıl yapılıyor?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Müşteri veya bayi şasi numarasını (VIN) yazarak veya fotoğrafını çekerek WhatsApp üzerinden gönderir. Yapay zeka OCR teknolojisi ile şasi numarasını okur, markanın şasi katalog veritabanına bağlanarak araca uyumlu OEM parça kodlarını saniyeler içinde listeler.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Katalog güncellemeleri AI sistemine nasıl yansıyor?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                ERP veya katalog veritabanınıza (Logo, Nebim, T-Soft vb.) doğrudan API bağlantısı kuruyoruz. Katalogda yaptığınız fiyat, stok ve ürün güncellemeleri anlık olarak yapay zekaya aktarılır ve asistan her zaman güncel verilerle konuşur.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Logo, Nebim veya Mikro ERP sistemleri ile entegrasyon mümkün mü?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Evet. n8n otomasyon motorumuz ve özel API köprülerimiz sayesinde Logo Tiger/Go3, Nebim V3, Mikro, SAP ve benzeri tüm büyük ERP yazılımlarıyla çift yönlü senkronizasyon sağlıyoruz. İş akışlarını nasıl kurguladığımızı görmek için <a href="/blog/n8n-whatsapp-crm-lead-entegrasyonu">n8n WhatsApp Entegrasyon Rehberimizi</a> inceleyebilirsiniz.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Yanlış parça tespiti durumunda sorumluluk kime ait?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Yapay zeka asistanı, şasi ve katalog eşleşmesinden kesin olarak emin olmadığı durumlarda inisiyatif almaz ve "Bu şasi için 2 farklı disk seçeneği çıkıyor, lütfen teyit edin" diyerek görüşmeyi yedek parça uzmanınıza aktarır. Bu sayede hatalı gönderim riski minimize edilir.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              B2B bayilere özel fiyatlandırma tanımlanabilir mi?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Evet. Bayi veya müşteri sisteme giriş yaptığında veya telefon numarası eşleştiğinde, yapay zeka asistanı o bayinin ERP'deki iskonto oranını ve özel fiyat listesini çekerek doğrudan bayiye özel fiyat teklifi sunar.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Kurulum süresi ne kadardır?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Kataloğunuzun boyutuna ve ERP altyapınıza bağlı olarak 3-5 hafta sürer. İlk aşamada veri yapısı analiz edilir, n8n iş akışları tasarlanır ve test ortamında şasi doğruluk oranları denetlenerek yayına alınır.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              API limitleri ve ek maliyetler nelerdir?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                VAPI, ElevenLabs (sesli aramalar için) ve WhatsApp Business API (mesajlaşmalar için) kullanımına bağlı olarak düşük dakika/mesaj başı maliyetler mevcuttur. Kurulum öncesi tüm maliyet simülasyonunu hazırlayarak tarafınıza sunuyoruz.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal-text">
+            <button class="faq__question" aria-expanded="false">
+              Hizmet bedeli ve fiyatlandırma modeliniz nasıldır?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <div class="faq__answer-inner">
+                Tek seferlik sistem kurulum/entegrasyon bedeli ve sistemin büyüklüğüne göre aylık bakım-destek bedeli şeklinde çalışıyoruz. Detaylı fiyatlandırma için ücretsiz keşif görüşmesi gerçekleştirebiliriz.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BÖLÜM 7: KAPANIŞ CTA & FORM ───────────────────────────── -->
+    <section class="contact-cta section" id="demo-form" aria-label="İletişim Formu">
+      <div class="container">
+        <div class="contact-cta__grid">
+          <div class="contact-cta__left reveal-text">
+            <h2>Kataloğunuzu yapay zeka ile <em class="gold-italic">akıllandırın.</em></h2>
+            <p>Bayilerinizin ve ekibinizin sipariş hızını 10 katına çıkarın, operasyonel yükünüzü sıfırlayın. Formu doldurun, işletmeniz için en uygun entegrasyon modelini belirleyelim.</p>
+            <div class="contact-cta__legal">
+              <p>Dravoxai Otomasyon Stüdyosu</p>
+              <p>Aksaray, Türkiye · Remote</p>
+            </div>
+          </div>
+
+          <div class="contact-cta__right reveal-text">
+            <form class="form" id="yedekparca-demo-form" name="yedekparca-demo-form" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+              <input type="hidden" name="form-name" value="yedekparca-demo-form" />
+              <div style="display: none;">
+                <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="demo-name">Ad Soyad *</label>
+                <input class="form__input" type="text" id="demo-name" name="name" required autocomplete="name" placeholder="Adınız Soyadınız" />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="demo-email">E-posta *</label>
+                <input class="form__input" type="email" id="demo-email" name="email" required autocomplete="email" placeholder="ornek@distributor.com" />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="demo-phone">Telefon *</label>
+                <input class="form__input" type="tel" id="demo-phone" name="phone" required autocomplete="tel" placeholder="+90 5XX XXX XX XX" />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="demo-company">Şirket / Katalog Adı *</label>
+                <input class="form__input" type="text" id="demo-company" name="company" required placeholder="Örn: X Yedek Parça Ltd. Şti." />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="demo-erp">Kullanılan ERP / Muhasebe Sistemi</label>
+                <input class="form__input" type="text" id="demo-erp" name="erp_system" placeholder="Örn: Logo Tiger, Nebim V3, Mikro vb." />
+              </div>
+              <button class="form__submit" type="submit">
+                <span class="form__submit-text">Demo Talep Et</span>
+                <span class="form__submit-arrow" aria-hidden="true">↗</span>
+              </button>
+              <p class="form__status" id="demo-form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Dravoxai. Tüm hakları saklıdır.</p>
+        <p class="footer__legal">Yapay Zeka Stüdyosu · Remote · Global</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── DEMO MODAL ── -->
+  <div class="demo-modal" id="demo-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="demo-modal__backdrop" id="modal-backdrop"></div>
+    <div class="demo-modal__panel">
+      <button class="demo-modal__close" id="close-demo-modal" aria-label="Kapat">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <h2 class="demo-modal__title" id="modal-title">Canlı AI Testi</h2>
+      <p class="demo-modal__desc">Yapay zeka yedek parça asistanımızı test etmek için hemen WhatsApp numaramız üzerinden şasi numarası (VIN) yazabilir veya parça sorabilirsiniz.</p>
+      <div class="demo-modal__actions">
+        <a href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">WhatsApp Canlı Test</a>
+        <a href="tel:+905301139021" class="cta-btn-secondary">Telefonla Ara</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/yedekparca.js"></script>
+</body>
+</html>

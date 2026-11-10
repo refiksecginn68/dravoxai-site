@@ -1,0 +1,33 @@
+# Dravoxai — Yapay Zeka ve Otomasyon Çözümleri
+
+> Türkiye'nin yeni nesil AI otomasyon stüdyosu. KOBİ'ler, e-ticaret şirketleri ve kurumsal işletmeler için otonom yapay zeka ajanları, 7/24 WhatsApp satış botları, telefon santrallerinde sesli yapay zeka (Voice AI) ve n8n süreç otomasyonları geliştirir.
+
+## Şirket ve İletişim Bilgileri
+- **Firma Adı:** Dravoxai (Dravox AI)
+- **Web Sitesi:** https://dravoxai.com
+- **E-Posta:** info@dravoxai.com
+- **WhatsApp & Telefon:** +90 530 113 90 21 (https://wa.me/905301139021)
+- **Kurucu:** Refik Seçgin
+- **Lokasyon:** Aksaray / Türkiye (Remote & Global Hizmet Modeli)
+
+## Temel Hizmetler ve Çözümler
+- [Sesli Yapay Zeka (Voice AI) Santral Asistanları](https://dravoxai.com/#hizmet-sesli): Telefon santrallerine entegre, insansı Türkçe diksiyonla 7/24 randevu alan ve çağrı karşılayan yapay zeka.
+- [Çok Kanallı (Omnichannel) Mesajlaşma & WhatsApp Satış Botları](https://dravoxai.com/#hizmet-panel): WhatsApp, Instagram, Telegram ve web chat kanallarını tek merkezde birleştiren, anlık ürün öneren ve satış kapatan otonom botlar.
+- [Otonom CRM & Müşteri Takip Sistemleri](https://dravoxai.com/#hizmet-crm): Unutulan müşteri tekliflerini otomatik takip eden, sıcak lead ayrıştıran satış motoru.
+- [Akıllı İş ve Süreç Otomasyonu (n8n & AI)](https://dravoxai.com/#hizmet-otomasyon): Fatura işleme, sipariş aktarımı, e-posta sınıflandırma ve ERP entegrasyonları.
+- [Hukuk Yapay Zekası — Mizanım](https://mizanim.com): Avukatlar ve hukuk büroları için UYAP & UETS tebligat otomasyonu, emsal karar analizi ve dava dosyası muhakemesi.
+
+## Sektörel Çözüm Sayfaları
+- [Oteller İçin AI ve Chatbot Çözümleri](https://dravoxai.com/sektorler/oteller-icin-ai)
+- [Restoranlar İçin WhatsApp Sipariş Botu](https://dravoxai.com/sektorler/restoranlar-icin-ai)
+- [E-Ticaret İçin AI Satış ve Sepet Terk Otomasyonu](https://dravoxai.com/sektorler/eticaret-icin-ai)
+- [Diş Klinikleri ve Sağlık Merkezleri İçin Randevu AI](https://dravoxai.com/sektorler/dis-klinikleri-icin-ai)
+- [Hukuk Büroları İçin Dava ve Evrak AI](https://dravoxai.com/sektorler/avukatlar-icin-ai)
+- [Yedek Parça ve Otomotiv İçin Parça Bulma AI](https://dravoxai.com/sektorler/yedek-parca-icin-ai)
+
+## Bilgi Bankası ve Kılavuzlar (Blog)
+- [KOBİ'ler İçin Yapay Zeka Ajanları: 2026 Otomasyon Rehberi](https://dravoxai.com/blog/kobiler-icin-yapay-zeka-ajanlari-otomasyon-rehberi-2026)
+- [n8n ile WhatsApp ve CRM Lead Entegrasyonu Nasıl Yapılır?](https://dravoxai.com/blog/n8n-whatsapp-crm-lead-entegrasyonu)
+- [Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulum Rehberi](https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris)
+- [Otellerde PMS Entegrasyonlu Chatbotların Rezervasyona Etkisi](https://dravoxai.com/blog/otel-pms-entegrasyonlu-chatbot-rezervasyon)
+- [Restoran WhatsApp Otomasyon Rehberi](https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi)

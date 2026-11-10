@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t03 d03">
+  <title id="t03">Ekip ve Operatör Yönetimi</title>
+  <desc id="d03">Birden fazla operatör ve ekibin organize edildiğini, yetki atamalarını gösteren infografik.</desc>
+
+  <defs>
+    <linearGradient id="bg03" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FF"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="shadow03" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+    <filter id="softShadow03" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="720" height="520" rx="24" fill="url(#bg03)"></rect>
+
+  
+  <circle cx="660" cy="80" r="32" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+  <circle cx="80" cy="460" r="22" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+
+  
+  <text x="40" y="60" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="2" fill="#6B7280">03 — EKİP YÖNETİMİ</text>
+  <text x="40" y="92" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Roller, yetkiler, anlık atamalar.</text>
+
+  
+  <g filter="url(#shadow03)">
+    <rect x="40" y="130" width="240" height="340" rx="20" fill="#2752E8"></rect>
+
+    
+    <g transform="translate(60 152)">
+      <circle r="14" fill="#FFFFFF" opacity="0.15"></circle>
+      <path d="M-5 -1c0-3 2-5 5-5s5 2 5 5M-7 5c0-3 3-5 7-5s7 2 7 5" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+    </g>
+    <text x="90" y="158" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Mevcut Ekipler</text>
+
+    
+    <g font-family="Inter, sans-serif">
+      
+      <rect x="60" y="180" width="200" height="48" rx="12" fill="#FFFFFF"></rect>
+      <text x="76" y="205" font-size="12" font-weight="600" fill="#1F2937">Destek Ekibi</text>
+      <text x="76" y="220" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">6 OPERATÖR · AKTİF</text>
+      <rect x="186" y="194" width="64" height="20" rx="10" fill="#22C55E"></rect>
+      <text x="218" y="207" font-size="9" font-weight="700" text-anchor="middle" fill="#FFFFFF">YETKİ VER</text>
+
+      
+      <rect x="60" y="236" width="200" height="48" rx="12" fill="#FFFFFF"></rect>
+      <text x="76" y="261" font-size="12" font-weight="600" fill="#1F2937">Müşteri Hizmetleri</text>
+      <text x="76" y="276" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">11 OPERATÖR · AKTİF</text>
+
+      
+      <rect x="60" y="292" width="200" height="48" rx="12" fill="#FFFFFF"></rect>
+      <text x="76" y="317" font-size="12" font-weight="600" fill="#1F2937">Satış</text>
+      <text x="76" y="332" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">4 OPERATÖR</text>
+      <rect x="200" y="306" width="50" height="20" rx="10" fill="#E0F2EA"></rect>
+      <circle cx="208" cy="316" r="4" fill="#22C55E"></circle>
+      <text x="232" y="319" font-size="9" font-weight="700" text-anchor="middle" fill="#16A34A">AKTİF</text>
+
+      
+      <rect x="60" y="348" width="200" height="48" rx="12" fill="#FFFFFF"></rect>
+      <text x="76" y="373" font-size="12" font-weight="600" fill="#1F2937">Muhasebe</text>
+      <text x="76" y="388" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">2 OPERATÖR</text>
+      <rect x="200" y="362" width="50" height="20" rx="10" fill="#FEE2E2"></rect>
+      <circle cx="208" cy="372" r="4" fill="#9CA3AF"></circle>
+      <text x="232" y="375" font-size="9" font-weight="700" text-anchor="middle" fill="#6B7280">PASİF</text>
+
+      
+      <rect x="60" y="410" width="118" height="36" rx="18" fill="#22C55E"></rect>
+      <text x="78" y="431" font-size="16" font-weight="700" fill="#FFFFFF">+</text>
+      <text x="92" y="432" font-size="11" font-weight="600" fill="#FFFFFF">Yeni Ekle</text>
+      <rect x="186" y="410" width="40" height="36" rx="18" fill="#1F3DBE"></rect>
+      <text x="206" y="431" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">Sil</text>
+    </g>
+  </g>
+
+  
+  <g filter="url(#shadow03)">
+    <rect x="340" y="190" width="260" height="220" rx="16" fill="#FFFFFF"></rect>
+    
+    <text x="358" y="218" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#7E4FFF">Sohbeti Operatöre Ata</text>
+    <line x1="358" y1="228" x2="582" y2="228" stroke="#EEF2FA" stroke-width="1"></line>
+
+    
+    <rect x="358" y="240" width="224" height="42" rx="10" fill="#F4F0FF" stroke="#7E4FFF" stroke-width="1.5"></rect>
+    <circle cx="378" cy="261" r="12" fill="#7E4FFF"></circle>
+    <text x="378" y="265" font-family="Inter, sans-serif" font-size="9" font-weight="600" text-anchor="middle" fill="#FFFFFF">AK</text>
+    <text x="396" y="258" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Ahmet Koç</text>
+    <text x="396" y="272" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#22C55E">● MÜSAİT</text>
+    <path d="M566 256 L572 262 L562 272" stroke="#7E4FFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    
+    <g font-family="Inter, sans-serif">
+      <g transform="translate(0 14)">
+        <rect x="358" y="290" width="224" height="32" rx="8" fill="#FFFFFF"></rect>
+        <circle cx="378" cy="306" r="12" fill="#0084FF"></circle>
+        <text x="378" y="310" font-size="9" font-weight="600" text-anchor="middle" fill="#FFFFFF">AD</text>
+        <text x="396" y="310" font-size="11" fill="#1F2937">Ali Demir</text>
+        <circle cx="566" cy="306" r="4" fill="#22C55E"></circle>
+      </g>
+      <g transform="translate(0 50)">
+        <rect x="358" y="290" width="224" height="32" rx="8" fill="#FFFFFF"></rect>
+        <circle cx="378" cy="306" r="12" fill="#E1306C"></circle>
+        <text x="378" y="310" font-size="9" font-weight="600" text-anchor="middle" fill="#FFFFFF">EY</text>
+        <text x="396" y="310" font-size="11" fill="#1F2937">Elif Yılmaz</text>
+        <circle cx="566" cy="306" r="4" fill="#F59E0B"></circle>
+      </g>
+      <g transform="translate(0 86)">
+        <rect x="358" y="290" width="224" height="32" rx="8" fill="#F4F7FF"></rect>
+        <circle cx="378" cy="306" r="12" fill="#22C55E"></circle>
+        <text x="378" y="310" font-size="9" font-weight="600" text-anchor="middle" fill="#FFFFFF">ZA</text>
+        <text x="396" y="310" font-size="11" fill="#1F2937">Zeynep Arslan</text>
+        <path d="M559 306 L564 311 L572 302" stroke="#22C55E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      </g>
+    </g>
+  </g>
+
+  
+  <path d="M610 254 L620 262" stroke="#7E4FFF" stroke-width="2.5" fill="none" stroke-linecap="round"></path>
+  <path d="M610 254 L596 248 L600 260 Z" fill="#7E4FFF"></path>
+
+  
+  <g filter="url(#softShadow03)">
+    <rect x="430" y="430" width="170" height="40" rx="20" fill="#FFFFFF"></rect>
+    <circle cx="450" cy="450" r="10" fill="#22C55E"></circle>
+    <path d="M445 450l4 4 8-8" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+    <text x="468" y="447" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Atama tamamlandı</text>
+    <text x="468" y="461" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">2 SN ÖNCE</text>
+  </g>
+
+  
+  <g font-family="JetBrains Mono, monospace">
+    <g filter="url(#softShadow03)">
+      <rect x="340" y="130" width="80" height="28" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="356" cy="144" r="5" fill="#2752E8"></circle>
+      <text x="368" y="148" font-size="9" letter-spacing="1.2" fill="#1F2937">YÖNETİCİ</text>
+    </g>
+    <g filter="url(#softShadow03)">
+      <rect x="428" y="130" width="80" height="28" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="444" cy="144" r="5" fill="#7E4FFF"></circle>
+      <text x="456" y="148" font-size="9" letter-spacing="1.2" fill="#1F2937">OPERATÖR</text>
+    </g>
+    <g filter="url(#softShadow03)">
+      <rect x="516" y="130" width="84" height="28" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="532" cy="144" r="5" fill="#22C55E"></circle>
+      <text x="544" y="148" font-size="9" letter-spacing="1.2" fill="#1F2937">İZLEYİCİ</text>
+    </g>
+  </g>
+</svg>

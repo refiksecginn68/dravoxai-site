@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t02 d02">
+  <title id="t02">WhatsApp Toplu Pazarlama</title>
+  <desc id="d02">Kişiselleştirilmiş toplu WhatsApp mesajlarının %95 açılma oranıyla gönderildiğini gösteren infografik.</desc>
+
+  <defs>
+    <linearGradient id="bg02" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FF"></stop>
+      <stop offset="1" stop-color="#EAF0FF"></stop>
+    </linearGradient>
+    <filter id="shadow02" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+    <filter id="softShadow02" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1B2A6B" flood-opacity="0.10"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="720" height="520" rx="24" fill="url(#bg02)"></rect>
+
+  
+  <circle cx="660" cy="80" r="32" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+  <circle cx="80" cy="460" r="22" fill="none" stroke="#C9D4F2" stroke-width="1.5" stroke-dasharray="2 4"></circle>
+
+  
+  <g font-family="JetBrains Mono, monospace">
+    <text x="40" y="60" font-size="10" letter-spacing="2" fill="#6B7280">02 — WHATSAPP PAZARLAMA</text>
+  </g>
+  <text x="40" y="92" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#1F2937">Bir mesaj, üç bin kişi, %95 açılma.</text>
+
+  
+  <g filter="url(#shadow02)">
+    <rect x="280" y="200" width="160" height="120" rx="20" fill="#FFFFFF"></rect>
+    <circle cx="360" cy="240" r="22" fill="#25D366"></circle>
+    <path d="M349 240c0-6 5-11 11-11s11 5 11 11c0 1.9-.5 3.6-1.2 5.1l1.2 4.9-5.1-1.2c-1.5.7-3.2 1.2-5.1 1.2-6.1 0-10.9-4.9-10.9-10z" fill="#FFFFFF"></path>
+    <text x="360" y="280" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#1F2937">Kampanya gönder</text>
+    <rect x="305" y="290" width="110" height="20" rx="10" fill="#2752E8"></rect>
+    <text x="360" y="304" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" text-anchor="middle" fill="#FFFFFF">GÖNDERİLİYOR</text>
+  </g>
+
+  
+  <g fill="none" stroke="#25D366" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.55">
+    <path d="M440 240 C 510 220, 520 150, 560 140"></path>
+    <path d="M440 260 C 520 260, 530 240, 570 230"></path>
+    <path d="M440 280 C 520 290, 530 320, 570 330"></path>
+    <path d="M440 300 C 510 320, 520 400, 560 420"></path>
+  </g>
+
+  
+  <g font-family="Inter, sans-serif">
+
+    <g filter="url(#softShadow02)">
+      <rect x="560" y="116" width="120" height="46" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="582" cy="139" r="13" fill="#7E4FFF"></circle>
+      <text x="582" y="143" font-size="10" font-weight="600" text-anchor="middle" fill="#FFFFFF">EA</text>
+      <text x="601" y="135" font-size="10" font-weight="600" fill="#1F2937">Elif A.</text>
+      <text x="601" y="150" font-size="8" fill="#6B7280">Sadık müşteri</text>
+    </g>
+
+    <g filter="url(#softShadow02)">
+      <rect x="570" y="208" width="120" height="46" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="592" cy="231" r="13" fill="#0084FF"></circle>
+      <text x="592" y="235" font-size="10" font-weight="600" text-anchor="middle" fill="#FFFFFF">MK</text>
+      <text x="611" y="227" font-size="10" font-weight="600" fill="#1F2937">Mert K.</text>
+      <text x="611" y="242" font-size="8" fill="#6B7280">Yeni müşteri</text>
+    </g>
+
+    <g filter="url(#softShadow02)">
+      <rect x="570" y="308" width="120" height="46" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="592" cy="331" r="13" fill="#F59E0B"></circle>
+      <text x="592" y="335" font-size="10" font-weight="600" text-anchor="middle" fill="#FFFFFF">AY</text>
+      <text x="611" y="327" font-size="10" font-weight="600" fill="#1F2937">Ayşe Y.</text>
+      <text x="611" y="342" font-size="8" fill="#6B7280">VIP segment</text>
+    </g>
+
+    <g filter="url(#softShadow02)">
+      <rect x="560" y="400" width="120" height="46" rx="14" fill="#FFFFFF"></rect>
+      <circle cx="582" cy="423" r="13" fill="#E1306C"></circle>
+      <text x="582" y="427" font-size="10" font-weight="600" text-anchor="middle" fill="#FFFFFF">BÖ</text>
+      <text x="601" y="419" font-size="10" font-weight="600" fill="#1F2937">Burak Ö.</text>
+      <text x="601" y="434" font-size="8" fill="#6B7280">Sepette ürün</text>
+    </g>
+  </g>
+
+  
+  <g filter="url(#shadow02)">
+    <rect x="40" y="180" width="200" height="200" rx="20" fill="#FFFFFF"></rect>
+    <text x="60" y="206" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" fill="#6B7280">AÇILMA ORANI</text>
+    
+    <g transform="translate(140 290)">
+      <circle r="58" fill="none" stroke="#EEF2FA" stroke-width="14"></circle>
+      <circle r="58" fill="none" stroke="#25D366" stroke-width="14" stroke-dasharray="346.6 364.4" stroke-dashoffset="0" transform="rotate(-90)" stroke-linecap="round"></circle>
+      <text y="-4" font-family="Inter, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#1F2937">%95</text>
+      <text y="18" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.4" text-anchor="middle" fill="#6B7280">OKUMA</text>
+    </g>
+  </g>
+
+  
+  <g font-family="Inter, sans-serif">
+    <g filter="url(#softShadow02)">
+      <rect x="40" y="400" width="96" height="60" rx="14" fill="#FFFFFF"></rect>
+      <text x="52" y="422" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.4" fill="#6B7280">GÖNDERİ</text>
+      <text x="52" y="448" font-size="20" font-weight="700" fill="#2752E8">3.240</text>
+    </g>
+    <g filter="url(#softShadow02)">
+      <rect x="144" y="400" width="96" height="60" rx="14" fill="#FFFFFF"></rect>
+      <text x="156" y="422" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.4" fill="#6B7280">YANIT</text>
+      <text x="156" y="448" font-size="20" font-weight="700" fill="#7E4FFF">874</text>
+    </g>
+  </g>
+
+  
+  <g filter="url(#softShadow02)">
+    <rect x="280" y="120" width="160" height="44" rx="22" fill="#FFFFFF"></rect>
+    <circle cx="304" cy="142" r="12" fill="#25D366"></circle>
+    <text x="324" y="138" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1F2937">Kişiselleştirme</text>
+    <text x="324" y="153" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.2" fill="#6B7280">{ad} · {segment}</text>
+  </g>
+
+  
+  <path d="M360 168 L360 196" stroke="#A6B4DE" stroke-width="1.5" stroke-dasharray="3 4"></path>
+  <polygon points="360,200 357,194 363,194" fill="#A6B4DE"></polygon>
+</svg>

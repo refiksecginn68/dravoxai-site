@@ -225,26 +225,94 @@ window.addEventListener('mousemove', (e) => {
   state.targetTiltZ = -state.mouseX * CONFIG.parallaxStrength * 0.5;
 });
 
-// ─── GSAP reveals ────────────────────────────────────────────────
+// ─── GSAP reveals — enhanced with stagger ─────────────────────────
 function initReveals() {
   const ctx = gsap.context(() => {
-    gsap.utils.toArray('.reveal-text').forEach((el) => {
+    // 1. Section labels — slide from left
+    gsap.utils.toArray('.section__label.reveal-text').forEach((el) => {
       gsap.fromTo(el,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.4,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 80%',
-            toggleActions: 'play none none none',
-            once: true,
-          },
-        }
+        { opacity: 0, x: -28 },
+        { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out',
+          scrollTrigger: { trigger: el, start: 'top 87%', once: true } }
       );
     });
+
+    // 2. Section headings — rise up
+    gsap.utils.toArray('.section__heading.reveal-text').forEach((el) => {
+      gsap.fromTo(el,
+        { opacity: 0, y: 48 },
+        { opacity: 1, y: 0, duration: 1.4, ease: 'power4.out',
+          scrollTrigger: { trigger: el, start: 'top 85%', once: true } }
+      );
+    });
+
+    // 3. Service cards — stagger scale+fade
+    const svcCards = gsap.utils.toArray('.services-cards-grid .service-card.reveal-text');
+    if (svcCards.length) {
+      gsap.fromTo(svcCards,
+        { opacity: 0, y: 64, scale: 0.96 },
+        { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: 'power3.out', stagger: 0.12,
+          scrollTrigger: { trigger: '.services-cards-grid', start: 'top 82%', once: true } }
+      );
+    }
+
+    // 4. Feature cards — stagger
+    const fCards = gsap.utils.toArray('.features-grid .feature-card.reveal-text');
+    if (fCards.length) {
+      gsap.fromTo(fCards,
+        { opacity: 0, y: 56, scale: 0.96 },
+        { opacity: 1, y: 0, scale: 1, duration: 1.0, ease: 'power3.out', stagger: 0.09,
+          scrollTrigger: { trigger: '.features-grid', start: 'top 82%', once: true } }
+      );
+    }
+
+    // 5. Project grid items — stagger
+    const fieldItems = gsap.utils.toArray('.field__grid .field__item.reveal-text');
+    if (fieldItems.length) {
+      gsap.fromTo(fieldItems,
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08,
+          scrollTrigger: { trigger: '.field__grid', start: 'top 84%', once: true } }
+      );
+    }
+
+    // 6. Approach steps — stagger
+    const steps = gsap.utils.toArray('.approach__step.reveal-text');
+    if (steps.length) {
+      gsap.fromTo(steps,
+        { opacity: 0, y: 32 },
+        { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.15,
+          scrollTrigger: { trigger: '.approach__steps', start: 'top 82%', once: true } }
+      );
+    }
+
+    // 7. All remaining reveal-text elements not handled above
+    gsap.utils.toArray('.reveal-text').forEach((el) => {
+      if (
+        el.classList.contains('section__label') ||
+        el.classList.contains('section__heading') ||
+        el.closest('.services-cards-grid') ||
+        el.closest('.features-grid') ||
+        el.closest('.field__grid') ||
+        el.closest('.approach__steps')
+      ) return;
+
+      gsap.fromTo(el,
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 82%', toggleActions: 'play none none none', once: true } }
+      );
+    });
+
+    // 8. Stats row
+    const statsRow = document.querySelector('.stats-row');
+    if (statsRow) {
+      gsap.fromTo(statsRow,
+        { opacity: 0, y: 32 },
+        { opacity: 1, y: 0, duration: 1.0, ease: 'power3.out',
+          scrollTrigger: { trigger: statsRow, start: 'top 86%', once: true } }
+      );
+    }
   });
 
   if (import.meta.hot) {
@@ -262,12 +330,12 @@ function initContactForm() {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = form.querySelector('.form__submit');
+    const btn = form.querySelector('.cform__submit');
 
     btn.disabled = true;
-    btn.querySelector('.form__submit-text').textContent = 'Gönderiliyor…';
+    btn.querySelector('span').textContent = 'Gönderiliyor…';
     status.textContent = '';
-    status.className   = 'form__status';
+    status.className   = 'cform__status';
 
     try {
       const res = await fetch('/', {
@@ -279,18 +347,32 @@ function initContactForm() {
       if (res.ok) {
         form.reset();
         status.textContent = '✓ Mesajınız alındı. En kısa sürede dönüyoruz.';
-        status.classList.add('form__status--success');
-        btn.querySelector('.form__submit-text').textContent = 'Gönderildi';
+        status.classList.add('success');
+        btn.querySelector('span').textContent = 'Gönderildi ✓';
       } else {
         throw new Error();
       }
     } catch {
       status.textContent = '✕ Bir hata oluştu. info@dravoxai.com adresine doğrudan yazabilirsiniz.';
-      status.classList.add('form__status--error');
+      status.classList.add('error');
       btn.disabled = false;
-      btn.querySelector('.form__submit-text').textContent = 'Tekrar Dene';
+      btn.querySelector('span').textContent = 'Tekrar Dene';
     }
   });
+}
+
+function initVidReveal() {
+  const inner = document.querySelector('.vid-section__inner');
+  if (!inner) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('vid-section__inner--visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  obs.observe(inner);
 }
 
 // ─── Nav hide/show & Smooth Scroll ────────────────────────────────
@@ -454,6 +536,151 @@ function initFlowLines() {
   }
 }
 
+// ─── Cursor ambient glow ─────────────────────────────────────────
+function initCursorGlow() {
+  if (window.innerWidth < 768) return;
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  document.body.appendChild(glow);
+
+  let mx = -999, my = -999, cx = -999, cy = -999;
+
+  document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
+
+  (function loop() {
+    cx += (mx - cx) * 0.08;
+    cy += (my - cy) * 0.08;
+    glow.style.left = cx + 'px';
+    glow.style.top  = cy + 'px';
+    requestAnimationFrame(loop);
+  })();
+}
+
+// ─── Counter animation ────────────────────────────────────────────
+function initCounters() {
+  const counters = document.querySelectorAll('.stat-item__number[data-count]');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el     = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const dur    = 1800;
+      const t0     = performance.now();
+
+      (function tick(now) {
+        const p = Math.min((now - t0) / dur, 1);
+        const e = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(e * target) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      })(performance.now());
+
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach(el => observer.observe(el));
+}
+
+// ─── About stat counters (data-count on .about-stat__num) ────────
+function initAboutCounters() {
+  const els = document.querySelectorAll('.about-stat__num[data-count]');
+  if (!els.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const dur = 1600;
+      const t0 = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - t0) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(ease * target) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      })(performance.now());
+      io.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  els.forEach(el => io.observe(el));
+}
+
+// ─── Services Slider — continuous marquee + hover pause ──────────
+function initServicesSlider() {
+  const wrap  = document.querySelector('.svc-slider-wrap');
+  const slider = document.getElementById('svcSlider');
+  const dots   = document.querySelectorAll('#svcDots .svc-dot');
+  if (!slider) return;
+
+  // CSS animation handles scrolling (svc-marquee keyframes)
+  // Pause on hover handled by CSS: .svc-slider-wrap:hover .svc-slider
+  // Dots just highlight active card based on animation progress
+  if (!dots.length) return;
+
+  const realCards = slider.querySelectorAll('.svc-card:not([id$="-dup"])');
+  const totalReal = realCards.length;
+  if (!totalReal) return;
+
+  // Highlight dots based on animation position
+  const updateDots = () => {
+    const style = window.getComputedStyle(slider);
+    const matrix = new DOMMatrix(style.transform);
+    const tx = Math.abs(matrix.m41);
+    const cardWidth = (realCards[0].offsetWidth + 20); // card + gap
+    const totalWidth = cardWidth * totalReal;
+    const progress = (tx % totalWidth) / totalWidth;
+    const idx = Math.min(Math.floor(progress * totalReal), totalReal - 1);
+    dots.forEach((d, i) => d.classList.toggle('svc-dot--active', i === idx));
+    requestAnimationFrame(updateDots);
+  };
+  requestAnimationFrame(updateDots);
+
+  // Dot click: scroll to that card manually (pause animation momentarily)
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.dataset.index, 10);
+      const card = realCards[idx];
+      if (!card) return;
+      // pause animation, snap to card
+      slider.style.animationPlayState = 'paused';
+      slider.style.transform = `translateX(-${card.offsetLeft}px)`;
+      setTimeout(() => { slider.style.transform = ''; slider.style.animationPlayState = ''; }, 2000);
+      dots.forEach((d, i) => d.classList.toggle('svc-dot--active', i === idx));
+    });
+  });
+}
+
+// ─── Hamburger / Mobile Nav ───────────────────────────────────────
+function initHamburger() {
+  const btn     = document.getElementById('hamburgerBtn');
+  const overlay = document.getElementById('mobileNav');
+  if (!btn || !overlay) return;
+
+  const open = () => {
+    btn.setAttribute('aria-expanded', 'true');
+    overlay.setAttribute('aria-hidden', 'false');
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    btn.setAttribute('aria-expanded', 'false');
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  };
+
+  btn.addEventListener('click', () => {
+    btn.getAttribute('aria-expanded') === 'true' ? close() : open();
+  });
+
+  overlay.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+}
+
 // ─── Boot ─────────────────────────────────────────────────────────
 // Defer WebGL setup so hero headline registers as LCP first
 const boot = () => {
@@ -466,7 +693,12 @@ const boot = () => {
   initReveals();
   initNav();
   initContactForm();
-  initFlowLines();
+  initVidReveal();
+  initCursorGlow();
+  initCounters();
+  initAboutCounters();
+  initServicesSlider();
+  initHamburger();
   tick();
 };
 

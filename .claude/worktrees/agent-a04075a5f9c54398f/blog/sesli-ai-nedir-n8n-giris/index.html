@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulumu | Dravoxai</title>
+  <meta name="description" content="Sesli yapay zeka (Voice AI) asistanları telefon hatlarını ve müşteri desteğini nasıl otonom hale getiriyor? VAPI, Retell AI ve n8n ile CRM entegrasyonlu sesli asistan kurulum rehberi." />
+  <meta name="keywords" content="sesli yapay zeka, n8n sesli chatbot, sesli ai asistanı nasıl kurulur, voice ai, vapi entegrasyonu" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dravoxai" />
+  <link rel="canonical" href="https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulumu" />
+  <meta property="og:description" content="Sesli yapay zeka (Voice AI) asistanları telefon hatlarını ve müşteri desteğini nasıl otonom hale getiriyor? VAPI, Retell AI ve n8n ile CRM entegrasyonlu sesli asistan kurulum rehberi." />
+  <meta property="og:url" content="https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Dravoxai" />
+  <meta property="article:published_time" content="2026-05-27" />
+  <meta property="article:author" content="Dravoxai" />
+  <meta property="article:section" content="Yapay Zeka" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulumu" />
+  <meta name="twitter:description" content="Sesli yapay zeka asistanları telefon hatlarını ve müşteri desteğini nasıl otonom hale getiriyor? VAPI ve n8n kurulumu." />
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulumu",
+    "description": "Sesli yapay zeka (Voice AI) asistanları telefon hatlarını ve müşteri desteğini nasıl otonom hale getiriyor? VAPI, Retell AI ve n8n ile CRM entegrasyonlu sesli asistan kurulum rehberi.",
+    "author": {
+      "@type": "Organization",
+      "name": "Dravoxai",
+      "url": "https://dravoxai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dravoxai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dravoxai.com/logo.png"
+      }
+    },
+    "datePublished": "2026-05-27",
+    "dateModified": "2026-05-27",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris"
+    },
+    "inLanguage": "tr-TR",
+    "wordCount": 2400
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://dravoxai.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dravoxai.com/blog"},
+      {"@type": "ListItem", "position": 3, "name": "Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulumu"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Sesli AI asistanları Türkçe konuşabiliyor mu ve Türkçe anlama oranı nasıl?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Gelişmiş sesli yapay zeka modelleri (özellikle ElevenLabs, Play.ht ve OpenAI ses modelleri) Türkçe dilinde mükemmel bir tonlama, vurgu ve şive taklidi ile konuşabilmektedir. Konuşmayı metne dönüştüren (STT) modellerin Türkçe anlama başarısı %95'in üzerindedir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "n8n entegrasyonu olmadan sesli asistan doğrudan kullanılamaz mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Doğrudan kullanılabilir, ancak sadece konuşup kapatır. Görüşme bittikten sonra verilerin CRM'e işlenmesi, randevu takvimine kayıt atılması veya müşteriye SMS gönderilmesi gibi arka plan işlemleri (otomasyon) için n8n veya benzeri bir veri entegrasyonu motoru gereklidir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sesli yapay zeka telefon hatlarına (GSM, SIP, Santral) bağlanabilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Twilio veya yerel telekom operatörlerinin sağladığı SIP Trunk protokolleri üzerinden sesli yapay zeka asistanları doğrudan mevcut kurumsal santralinize veya yeni bir telefon numarasına kolayca yönlendirilebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gecikme süresi (latency) insan konuşmasını taklit etmek için yeterince düşük mü?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "VAPI ve Retell AI gibi özelleştirilmiş geçitler (Voice Gateways), gecikme sürelerini 800ms - 1.2s arasına kadar düşürmüştür. Bu süre, normal bir telefon görüşmesindeki duraklama sürelerine oldukça yakın olup, yapay zekanın söz kesme (interruption) yetenekleriyle birleştiğinde doğal bir konuşma akışı sağlar."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="/src/blog.css" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- WhatsApp floating button -->
+  <a class="wp-float" href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile ulaşın">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.862L0 24l6.333-1.501A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.946 0-3.76-.523-5.316-1.432l-.38-.222-3.742.887.95-3.614-.248-.396A9.791 9.791 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav__row">
+      <a href="/" class="nav__brand" aria-label="Ana Sayfa">
+        <img class="nav__logo" src="/logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
+      </a>
+      <nav class="nav__center" aria-label="Ana Menü">
+        <ul class="nav__links">
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
+              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__spacer" aria-hidden="true"></div>
+    </div>
+    <div class="nav__divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="article-wrap">
+
+      <!-- Article header -->
+      <header class="article-header">
+        <span class="article-cat">YAPAY ZEKA & OTOMASYON</span>
+        <h1 class="article-h1">Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulum Rehberi</h1>
+        <div class="article-byline">
+          <span>27 Mayıs 2026</span>
+          <span class="article-byline__sep">·</span>
+          <span>9 dk okuma</span>
+          <span class="article-byline__sep">·</span>
+          <span>Dravoxai Editör</span>
+        </div>
+      </header>
+
+      <!-- Lead paragraph -->
+      <blockquote class="article-lead">
+        Müşteri temsilcilerinin rutin telefon aramalarına, kargo sorgulamalarına veya randevu onaylarına harcadığı vakitleri hayal edin. Sesli Yapay Zeka (Voice AI) asistanları, artık telefonda tıpkı bir insan gibi, gecikmesiz ve kusursuz bir aksanla konuşabiliyor. Bu rehberde, sesli yapay zekanın arka plan teknolojisini açıklayacak ve n8n ile kendi veri akışınıza entegre çalışan bir sesli asistanın nasıl kurulacağını adım adım göstereceğiz.
+      </blockquote>
+
+      <!-- Article body -->
+      <article class="article-body">
+
+        <h2>Sesli Yapay Zeka (Voice AI) Nedir?</h2>
+
+        <p>Sesli Yapay Zeka, bir kullanıcının sesli konuşmasını gerçek zamanlı olarak dinleyen, anlayan, buna uygun cevabı üreten ve tekrar doğal bir insan sesiyle karşı tarafa aktaran sistemler bütünüdür. Geleneksel "Tuşlamalı IVR" veya eski nesil robotik ses sistemlerinin aksine, modern sesli AI asistanları müşterinin cümlesini kesmesine izin verir (interruption), karmaşık talepleri anlar ve saniyeden kısa sürede yanıt verir.</p>
+
+        <h2>Voice AI Nasıl Çalışır? 3 Temel Katman</h2>
+
+        <p>Bir sesli yapay zekanın arkasında çalışan üç ana katman vardır:</p>
+
+        <ol>
+          <li><strong>Konuşmayı Metne Dönüştürme (STT - Speech to Text):</strong> Karşı taraftan gelen ses dalgaları, Deepgram veya OpenAI Whisper gibi modellerle milisaniyeler içinde yazılı metne dönüştürülür.</li>
+          <li><strong>Büyük Dil Modeli (LLM - Large Language Model):</strong> Oluşan metin, asistanın karakterini, kurallarını ve bilgi bankasını içeren bir modele (GPT-4o, Claude 3.5 Sonnet vb.) gönderilir. Model en uygun yanıt metnini hazırlar.</li>
+          <li><strong>Metni Konuşmaya Dönüştürme (TTS - Text to Speech):</strong> Modelden dönen yazılı yanıt, ElevenLabs, Play.ht veya Cartesia gibi gelişmiş ses sentezleyiciler kullanılarak duygulu, vurgulu ve nefes alış-veriş taklitli bir insan sesine çevrilir.</li>
+        </ol>
+
+        <p>Tüm bu süreç, <strong>VAPI</strong> veya <strong>Retell AI</strong> gibi özel ses sunucuları (Voice Gateways) sayesinde 1 saniyenin altında gecikmeyle (low latency) tamamlanır.</p>
+
+        <h2>Neden n8n ile Entegrasyon Kurmalıyız?</h2>
+
+        <p>Sesli asistanın sadece konuşabilmesi, işletmeniz için yeterli değildir. Görüşme bittiğinde şu senaryoların gerçekleşmesi gerekir:</p>
+        <ul>
+          <li>Konuşma dökümünün (transcript) ve müşteri his analizinin (sentiment analysis) çıkarılması,</li>
+          <li>Arayan kişinin telefon numarasından tespit edilip CRM'deki kaydına veri yazılması,</li>
+          <li>Eğer bir randevu veya sipariş kesinleştiyse, bunun veritabanına veya takvime otomatik eklenmesi,</li>
+          <li>Görüşme sonrası müşteriye SMS veya WhatsApp ile onay mesajı yollanması.</li>
+        </ul>
+        <p>İşte bu karmaşık iş akışlarını yönetmek için açık kaynaklı ve güçlü bir iş otomasyon motoru olan <em class="gold-italic">n8n</em> en mantıklı ve maliyetsiz çözümdür.</p>
+
+        <h2>Adım Adım n8n ve VAPI ile Sesli Asistan Kurulumu</h2>
+
+        <h3>Adım 1: VAPI Üzerinde Sesli Ajanı Yapılandırın</h3>
+        <p>VAPI paneline girerek yeni bir asistan oluşturun. Burada şu parametreleri belirleyin:</p>
+        <ul>
+          <li><strong>Sistem Talimatı (Prompt):</strong> "Sen Dravoxai asistanısın. Müşterilerin randevu taleplerini alacaksın..." gibi rol tanımlaması.</li>
+          <li><strong>Ses Seçimi:</strong> ElevenLabs'ten Türkçe tınısı en doğal olan bir ses kimliği (örneğin "Serdar" veya "Elif").</li>
+          <li><strong>Gecikme Ayarları:</strong> Konuşma akıcılığını artırmak için sessizlik algılama süresini 600ms civarında tutun.</li>
+        </ul>
+
+        <h3>Adım 2: n8n Üzerinde Webhook Tetikleyicisi Tanımlayın</h3>
+        <p>n8n arayüzünde yeni bir workflow oluşturun ve başlangıç noktası olarak bir <strong>Webhook Node</strong> ekleyin. Webhook HTTP metodunu <code>POST</code> olarak ayarlayın. VAPI, arama bittiğinde (call.ended) bu webhook adresine çağrının tüm detaylarını gönderecektir.</p>
+
+        <p>n8n tarafında aldığınız webhook URL'sini kopyalayın ve VAPI asistanınızın "Server URL" alanına yapıştırın.</p>
+
+        <h3>Adım 3: n8n ile Çağrı Verilerini Ayrıştırın (JSON Extraction)</h3>
+        <p>VAPI'den gelen JSON verisi şu bilgileri içerir:</p>
+        <pre style="background: #111; color: #D4B896; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.9rem; overflow-x: auto; margin: 15px 0;">
+{
+  "message": {
+    "type": "call-ended",
+    "call": {
+      "customer": { "number": "+905301139021" },
+      "transcript": "Müşteri: Merhaba, yarın saat 14:00'e randevu istiyorum. Asistan: Tabi ki, adınız nedir...",
+      "analysis": {
+        "summary": "Müşteri yarın 14:00 için randevu talep etti.",
+        "success": true
+      }
+    }
+  }
+}</pre>
+        <p>n8n içerisindeki <strong>Set / Edit Fields Node</strong>'u kullanarak müşteri numarasını, konuşmanın özetini ve randevu tarihini değişkenlere atayın.</p>
+
+        <h3>Adım 4: CRM ve Veritabanı Bağlantısı</h3>
+        <p>Ayrıştırılan verileri veritabanınıza işlemek için n8n üzerindeki hazır entegrasyonları kullanın. Örneğin:</p>
+        <ul>
+          <li><strong>HubSpot/Salesforce:</strong> Arayan telefon numarasına sahip bir kişi (contact) var mı kontrol edin. Varsa, çağrı geçmişine konuşma özetini ekleyin. Yoksa yeni bir kişi kaydı açın.</li>
+          <li><strong>Google Calendar:</strong> Eğer randevu başarılı olduysa, belirlenen saat diliminde yeni bir etkinlik oluşturun.</li>
+        </ul>
+
+        <h3>Adım 5: WhatsApp Onayı ile Süreci Kapatın</h3>
+        <p>Son adım olarak, n8n'e bir WhatsApp API veya Twilio modülü ekleyerek müşteriye otomatik bir şablon mesaj yollayın: <em>"Merhaba, sesli asistanımızla yaptığınız görüşmeye istinaden randevunuz 28 Mayıs saat 14:00'e tanımlanmıştır."</em></p>
+
+        <h2>Sesli AI'ın Sektörel ROI (Yatırım Getirisi) Analizi</h2>
+
+        <p>Sesli yapay zekanın maliyet ve performans karşılaştırması kurumsal ölçekte çarpıcı sonuçlar ortaya koymaktadır:</p>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.95rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid #D4B896; text-align: left;">
+              <th style="padding: 10px 5px; color: #D4B896;">Kriter</th>
+              <th style="padding: 10px 5px; color: #D4B896;">İnsan Çağrı Merkezi</th>
+              <th style="padding: 10px 5px; color: #D4B896;">Sesli AI + n8n</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #222;">
+              <td style="padding: 10px 5px; font-weight: bold;">Çalışma Saatleri</td>
+              <td style="padding: 10px 5px;">Vardiyalı (Genelde 09:00 - 18:00)</td>
+              <td style="padding: 10px 5px;">7/24 Kesintisiz</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #222;">
+              <td style="padding: 10px 5px; font-weight: bold;">Dakika Maliyeti</td>
+              <td style="padding: 10px 5px;">Ort. 4.50 - 6.00 TL (Maaş+Ofis+Yemek)</td>
+              <td style="padding: 10px 5px;">Ort. 0.80 - 1.20 TL (API Tüketimi)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #222;">
+              <td style="padding: 10px 5px; font-weight: bold;">Eşzamanlı Çağrı</td>
+              <td style="padding: 10px 5px;">Aynı anda 1 çağrı / personel</td>
+              <td style="padding: 10px 5px;">Aynı anda binlerce çağrı</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #222;">
+              <td style="padding: 10px 5px; font-weight: bold;">Hata Oranı</td>
+              <td style="padding: 10px 5px;">Yüksek (Manuel kayıt girişi hatası)</td>
+              <td style="padding: 10px 5px;">Sıfıra Yakın (Doğrudan DB entegrasyonu)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Sıkça Sorulan Sorular</h2>
+
+        <h3>Sesli AI asistanları Türkçe konuşabiliyor mu ve Türkçe anlama oranı nasıl?</h3>
+        <p>Evet. Gelişmiş sesli yapay zeka modelleri (özellikle ElevenLabs, Play.ht ve OpenAI ses modelleri) Türkçe dilinde mükemmel bir tonlama, vurgu ve şive taklidi ile konuşabilmektedir. Konuşmayı metne dönüştüren (STT) modellerin Türkçe anlama başarısı %95'in üzerindedir.</p>
+
+        <h3>n8n entegrasyonu olmadan sesli asistan doğrudan kullanılamaz mı?</h3>
+        <p>Doğrudan kullanılabilir, ancak sadece konuşup kapatır. Görüşme bittiğinde verilerin CRM'e işlenmesi, randevu takvimine kayıt atılması veya müşteriye SMS gönderilmesi gibi arka plan işlemleri (otomasyon) için n8n veya benzeri bir veri entegrasyonu motoru gereklidir.</p>
+
+        <h3>Sesli yapay zeka telefon hatlarına (GSM, SIP, Santral) bağlanabilir mi?</h3>
+        <p>Evet. Twilio veya yerel telekom operatörlerinin sağladığı SIP Trunk protokolleri üzerinden sesli yapay zeka asistanları doğrudan mevcut kurumsal santralinize veya yeni bir telefon numarasına kolayca yönlendirilebilir.</p>
+
+        <h3>Gecikme süresi (latency) insan konuşmasını taklit etmek için yeterince düşük mü?</h3>
+        <p>VAPI ve Retell AI gibi özelleştirilmiş geçitler (Voice Gateways), gecikme sürelerini 800ms - 1.2s arasına kadar düşürmüştür. Bu süre, normal bir telefon görüşmesindeki duraklama sürelerine oldukça yakın olup, yapay zekanın söz kesme (interruption) yetenekleriyle birleştiğinde doğal bir konuşma akışı sağlar.</p>
+
+        <h2>Sonuç: Telefonda Yapay Zeka Dönemi</h2>
+        <p>2026 yılı itibarıyla sesli yapay zeka, müşteri deneyiminde (CX) devrim yaratmaktadır. Artık telefonda bekleyen veya yanlış tuşlamalarla vakit kaybeden müşteriler dönemi sona eriyor. n8n gibi veri entegrasyon motorları ile birleştiğinde, sesli asistanlar şirketinizin tüm arka plan veritabanıyla konuşan otonom birer çalışana dönüşüyor.</p>
+
+        <p><strong>Dravoxai olarak</strong> işletmenizin telefon hatlarını ve müşteri destek kanallarını sesli yapay zeka asistanları ile otonom hale getiriyoruz. n8n veri akışlarınızı yapılandırıyor ve CRM entegrasyonlarınızı anahtar teslim sağlıyoruz. Ayrıntılı bilgi ve canlı demo testi için bizimle iletişime geçin.</p>
+
+      </article>
+
+      <!-- Share buttons -->
+      <div class="article-share">
+        <span class="article-share__label">Paylaş</span>
+        <a class="share-btn" href="https://wa.me/?text=Sesli%20Yapay%20Zeka%20Nedir%3F%20n8n%20ile%20Sesli%20AI%20Asistan%20Kurulum%20Rehberi%20-%20https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris&text=Sesli%20Yapay%20Zeka%20Nedir%3F%20n8n%20ile%20Sesli%20AI%20Asistan%20Kurulum%20Rehberi" target="_blank" rel="noopener noreferrer">
+          Twitter / X
+        </a>
+        <button class="share-btn share-btn--copy" id="copy-link" type="button">Linki Kopyala</button>
+      </div>
+
+      <!-- Related page card -->
+      <a class="article-related" href="/projeler">
+        <div class="article-related__text">
+          <h3>Dravoxai Projeleri — Vaka Çalışmaları</h3>
+          <p>n8n otomasyonları, sesli yapay zeka asistanları ve WhatsApp entegrasyonlarımızın yer aldığı 6 vaka çalışmasını inceleyin.</p>
+        </div>
+        <span class="cta-btn-secondary" aria-hidden="true">İncele →</span>
+      </a>
+
+      <!-- CTA card -->
+      <div class="article-cta">
+        <h2 class="article-cta__title">Telefon hatlarınızı yapay zeka ile <em class="gold-italic">otonom</em> hale getirelim.</h2>
+        <p class="article-cta__sub">Şirketiniz için sesli AI asistanlarının ve n8n veri entegrasyonlarının nasıl kurulacağını, dakikalık operasyonel maliyet tasarrufunuzu analiz ederek gösterelim.</p>
+        <div class="article-cta__btns">
+          <a href="/iletisim" class="cta-btn-primary">Hemen İletişime Geçin →</a>
+          <a href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">WhatsApp'tan Yaz</a>
+          <a href="tel:+905301139021" class="cta-btn-secondary">Hemen Ara</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Dravoxai. Tüm hakları saklıdır.</p>
+        <p class="footer__legal">Yapay Zeka Stüdyosu · Remote · Global</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/blog.js"></script>
+</body>
+</html>

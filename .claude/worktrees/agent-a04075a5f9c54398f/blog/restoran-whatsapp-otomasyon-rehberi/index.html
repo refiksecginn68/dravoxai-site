@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur? | Dravoxai</title>
+  <meta name="description" content="Yoğun saatlerde telefonları açamıyor musunuz? Restoranlar için WhatsApp sipariş ve rezervasyon botu kurulum rehberi. POS entegrasyonu, maliyet ve ROI analizi." />
+  <meta name="keywords" content="restoran whatsapp otomasyon, restoran sipariş botu nasıl kurulur, whatsapp adisyon entegrasyonu, restoran chatbot" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dravoxai" />
+  <link rel="canonical" href="https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur? | Dravoxai" />
+  <meta property="og:description" content="Yoğun saatlerde telefonları açamıyor musunuz? Restoranlar için WhatsApp sipariş ve rezervasyon botu kurulum rehberi. POS entegrasyonu, maliyet ve ROI analizi." />
+  <meta property="og:url" content="https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Dravoxai" />
+  <meta property="article:published_time" content="2026-05-25" />
+  <meta property="article:author" content="Dravoxai" />
+  <meta property="article:section" content="Restoran Otomasyonu" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur?" />
+  <meta name="twitter:description" content="Yoğun saatlerde telefonları açamıyor musunuz? Restoranlar için WhatsApp sipariş ve rezervasyon botu kurulum rehberi." />
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur?",
+    "description": "Yoğun saatlerde telefonları açamıyor musunuz? Restoranlar için WhatsApp sipariş ve rezervasyon botu kurulum rehberi. POS entegrasyonu, maliyet ve ROI analizi.",
+    "author": {
+      "@type": "Organization",
+      "name": "Dravoxai",
+      "url": "https://dravoxai.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dravoxai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dravoxai.com/logo.png"
+      }
+    },
+    "datePublished": "2026-05-25",
+    "dateModified": "2026-05-25",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi"
+    },
+    "inLanguage": "tr-TR",
+    "wordCount": 2300
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://dravoxai.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dravoxai.com/blog"},
+      {"@type": "ListItem", "position": 3, "name": "Restoran WhatsApp Otomasyon Rehberi"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Adisyon ve POS sistemimize entegre edilebilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. API desteği olan Sambapos, Mikropos, Logo gibi modern tüm adisyon sistemlerine doğrudan entegrasyon sağlıyoruz. API'si olmayan eski sistemler için n8n ile özel ara çözümler kurarak gelen siparişleri mutfak ekranına yönlendiriyoruz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Yapay zeka siparişi yanlış alabilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır. Sistem, müşterinin sepetini onaylamadan önce net bir teyit mesajı yollar ('Şu adrese şu ürünler gönderilecek, doğru mu?'). Müşteri onayladıktan sonra sipariş POS sistemine ve mutfağa düşer. Karmaşık veya çözülemeyen durumlarda otomatik olarak garsona/operatöre yönlendirme yapılır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Komisyonlu yemek sipariş platformlarını tamamen kapatmalı mıyız?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır. Yemeksepeti, Getir, Trendyol Yemek gibi platformlar yeni müşteriler edinmek için harikadır. Stratejimiz: Yeni müşteriyi bu platformlardan çekip, ilk siparişin ardından paket içine koyacağımız QR kod veya özel kartlar ile sonraki siparişleri kendi komisyonsuz WhatsApp kanalımıza yönlendirmektir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Resmi WhatsApp Business API kullanmanın avantajı nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Resmi API (Meta onaylı), numaranızın banlanma riskini sıfıra indirir. Sınırsız mesaj gönderimi sağlar, işletme profiline resmi yeşil tik alabilmenize olanak tanır ve aynı anda onlarca panelden/bireyden erişilebilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Restoran WhatsApp sipariş botu fiyatları ne kadar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Restoranın şube sayısı, menü büyüklüğü ve entegrasyon yapılacak adisyon sistemine bağlı olarak kurulum ücreti 20.000₺ - 50.000₺ aralığındadır. Sonraki aylarda kullanılan API ve yapay zeka sorgu tüketim maliyetleri bulunmaktadır."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="/src/blog.css" />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- WhatsApp floating button -->
+  <a class="wp-float" href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile ulaşın">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.862L0 24l6.333-1.501A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.946 0-3.76-.523-5.316-1.432l-.38-.222-3.742.887.95-3.614-.248-.396A9.791 9.791 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav__row">
+      <a href="/" class="nav__brand" aria-label="Ana Sayfa">
+        <img class="nav__logo" src="/logo.png" alt="Dravoxai - Yapay Zeka ve Otomasyon Ajansı" height="32" onerror="this.style.display='none'" />
+      </a>
+      <nav class="nav__center" aria-label="Ana Menü">
+        <ul class="nav__links">
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Özellikler
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/#hizmet-sesli" class="nav__dropdown-item" role="menuitem">Sesli AI Asistanları</a></li>
+              <li role="none"><a href="/#hizmet-panel" class="nav__dropdown-item" role="menuitem">Çok Kanallı Panel</a></li>
+              <li role="none"><a href="/#hizmet-web" class="nav__dropdown-item" role="menuitem">Web Tasarımı</a></li>
+              <li role="none"><a href="/#hizmet-otomasyon" class="nav__dropdown-item" role="menuitem">Akıllı Otomasyon</a></li>
+              <li role="none"><a href="/#hizmet-crm" class="nav__dropdown-item" role="menuitem">CRM Altyapıları</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Sektöre Özel
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/sektorler/oteller-icin-ai" class="nav__dropdown-item" role="menuitem">Oteller İçin AI</a></li>
+              <li role="none"><a href="/sektorler/restoranlar-icin-ai" class="nav__dropdown-item" role="menuitem">Restoranlar İçin AI</a></li>
+              <li role="none"><a href="/sektorler/eticaret-icin-ai" class="nav__dropdown-item" role="menuitem">E-ticaret İçin AI</a></li>
+              <li role="none"><a href="/sektorler/yedek-parca-icin-ai" class="nav__dropdown-item" role="menuitem">Yedek Parça İçin AI</a></li>
+              <li role="none"><a href="/sektorler/dis-klinikleri-icin-ai" class="nav__dropdown-item" role="menuitem">Diş Klinikleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/guzellik-merkezleri-icin-ai" class="nav__dropdown-item" role="menuitem">Güzellik Merkezleri İçin AI</a></li>
+              <li role="none"><a href="/sektorler/avukatlar-icin-ai" class="nav__dropdown-item" role="menuitem">Avukatlar İçin AI</a></li>
+            </ul>
+          </li>
+          <li class="nav__dropdown-wrap">
+            <button class="nav__btn nav__dropdown-toggle nav__btn--active" aria-expanded="false" aria-haspopup="true">
+              Kurumsal
+              <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li role="none"><a href="/hakkimizda" class="nav__dropdown-item" role="menuitem">Hakkımızda</a></li>
+              <li role="none"><a href="/projeler" class="nav__dropdown-item" role="menuitem">Projeler</a></li>
+              <li role="none"><a href="/blog" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">Blog</a></li>
+              <li role="none"><a href="/#yaklasim" class="nav__dropdown-item" role="menuitem">Nasıl Çalışır</a></li>
+              <li role="none"><a href="/iletisim" class="nav__dropdown-item" role="menuitem">İletişim</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav__spacer" aria-hidden="true"></div>
+    </div>
+    <div class="nav__divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="article-wrap">
+
+      <!-- Article header -->
+      <header class="article-header">
+        <span class="article-cat">RESTORAN / OTOMASYON</span>
+        <h1 class="article-h1">Restoran WhatsApp Otomasyon Rehberi: Sipariş Botu Nasıl Kurulur?</h1>
+        <div class="article-byline">
+          <span>25 Mayıs 2026</span>
+          <span class="article-byline__sep">·</span>
+          <span>7 dk okuma</span>
+          <span class="article-byline__sep">·</span>
+          <span>Dravoxai Editör</span>
+        </div>
+      </header>
+
+      <!-- Lead paragraph -->
+      <blockquote class="article-lead">
+        Cuma akşamı saat 20:00. Restoranda servis en yoğun halinde, paket servis siparişleri üst üste yığılmış ve telefon hattınız sürekli meşgul çalıyor. Aynı anda WhatsApp ve Instagram DM üzerinden onlarca müşteri güncel menüyü soruyor, adresi doğrulamaya çalışıyor veya masa müsaitliği istiyor. Bu esnada kaçırdığınız her arama ve geç cevap verdiğiniz her mesaj, rakip işletmeye giden birer adisyon. Bu rehberde, yapay zekayı ve resmi WhatsApp Business API'yi restoranınızın adisyon sistemine nasıl entegre edeceğinizi, komisyon oranlarını nasıl düşüreceğinizi ve sipariş botunu adım adım nasıl kuracağınızı anlatıyoruz.
+      </blockquote>
+
+      <!-- Article body -->
+      <article class="article-body">
+
+        <h2>Klasik Sipariş Yöntemlerinin Sınırları: Telefon ve Statik QR Menü</h2>
+
+        <p>Restoranların büyük çoğunluğu paket servis ve rezervasyonları hala telefonla veya personelin manuel yönettiği bireysel WhatsApp hatları üzerinden alıyor. Bu yöntem iki temel kriz yaratır:</p>
+
+        <ol>
+          <li><strong>Kapasite Sınırı:</strong> Telefon hattı tek bir görüşme alabilir. İkinci arayan kişi meşgul tonu duyar. Yoğun akşamlarda aynı anda arayan 10 kişiden sadece 1'ine yanıt verebilirsiniz.</li>
+          <li><strong>Yüksek Zaman Maliyeti:</strong> Personeliniz müşteriye telefonda menü okumak, adres yazmak, fiyat teyidi yapmak ve kredi kartı bilgilerini telefondan almak için sipariş başına ortalama 4-5 dakika harcar.</li>
+        </ol>
+
+        <p>Son yıllarda yaygınlaşan "statik QR menüler" ise sadece dijital bir PDF göstermekten öteye gidemiyor. Müşteri menüyü incelese bile siparişi tamamlamak için yine telefonla aramak veya bir garson çağırmak zorunda kalıyor. Süreç kesintiye uğruyor ve satış dönüşüm oranları düşüyor.</p>
+
+        <p>Yapay zeka tabanlı <strong>restoran WhatsApp otomasyonu</strong>, müşterinin menü inceleme, sipariş verme, adres girme ve ödeme yapma süreçlerini insan müdahalesine gerek kalmadan, WhatsApp sohbeti içerisinde 15 saniyede çözer.</p>
+
+        <h2>WhatsApp Sipariş Botu Nasıl Çalışır?</h2>
+
+        <p>Bir yapay zeka sipariş botunun standart akışı son derece pratiktir:</p>
+
+        <ul>
+          <li><strong>Karşılama:</strong> Müşteri WhatsApp üzerinden "Merhaba", "Sipariş vermek istiyorum" veya "Menü alabilir miyim" yazar. Bot, 2 saniye içinde restoranın marka ses tonuyla (samimi veya editoryal) yanıt verir.</li>
+          <li><strong>Katalog Sunumu:</strong> Bot, WhatsApp entegre katalog veya interaktif liste butonları ile menüyü fiyatlarıyla listeler. Alerjen bilgileri, porsiyon seçenekleri ve ekstralar (örn: soslar, içecekler) bot tarafından akıllıca sorulur.</li>
+          <li><strong>Adres ve Konum Doğrulama:</strong> Müşteri adresini metin olarak yazabilir veya doğrudan WhatsApp üzerinden konum gönderebilir. Bot, konumu parse ederek hangi şubeye ve hangi teslimat bölgesine girdiğini analiz eder. Teslimat dışı bir bölgeyse kibarca uyarır.</li>
+          <li><strong>Ödeme Entegrasyonu:</strong> Bot; kapıda ödeme, nakit veya sohbet içinde güvenli online ödeme linki (İyzico, Paytr vb.) seçeneklerini sunar.</li>
+          <li><strong>Onay ve Adisyon Kaydı:</strong> Müşteri sepetini onayladığı an, sistem arka planda siparişi doğrudan Sambapos, Mikropos veya restoranınızın kullandığı güncel adisyon sistemine yazar. Mutfak yazıcısı sipariş fişini otomatik çıkartır.</li>
+        </ul>
+
+        <h2>Adım Adım Kurulum Rehberi</h2>
+
+        <p>Bir restoran için profesyonel bir yapay zeka sipariş sistemi kurmak için şu teknik süreçler takip edilir:</p>
+
+        <h3>Adım 1: Meta WhatsApp Business API Başvurusu</h3>
+        <p>Kişisel WhatsApp numaraları toplu mesaj gönderimlerinde veya yoğun eş zamanlı konuşmalarda kolayca banlanır. Bu nedenle ilk iş, Meta Developer Console üzerinden resmi <strong>WhatsApp Business API</strong> kurulumu yapmaktır. Bu süreç için işletme vergi levhanız ve Facebook Business Manager doğrulamanız gerekir. Resmi API kullanıldığında numaranıza resmi işletme adı tanımlanır ve kurumsal yeşil tik başvurusu yapılabilir.</p>
+
+        <h3>Adım 2: Adisyon (POS) Entegrasyonu</h3>
+        <p>Siparişlerin WhatsApp'tan gelip ayrıca bir tablette birikmesi ve personelin bunu elle POS cihazına girmesi operasyonel bir kabustur. Çözüm, API entegrasyonudur. Eğer modern bir bulut tabanlı POS veya API desteği olan yerel bir sistem (Sambapos, Mikropos vb.) kullanıyorsanız, <strong>n8n</strong> gibi iş akışı otomasyon araçlarıyla bir köprü kurarız. WhatsApp'ta onaylanan sipariş anında mutfaktaki yazıcıdan fırlar.</p>
+
+        <h3>Adım 3: Yapay Zeka Ajanının (Agent) Eğitilmesi</h3>
+        <p>Botun sadece düğmelere basılan kuru bir sistem olmaması gerekir. Müşteri "Pizza acı mı?", "Glutensiz seçeneğiniz var mı?", "Otoparkınız mevcut mu?" gibi sorular sorabilir. Dravoxai olarak geliştirdiğimiz sistemlerde, restoranın menü detaylarını, içeriklerini, sıkça sorulan sorularını ve restoran kurallarını geniş dil modellerine (LLM) birer bilgi tabanı (knowledge base) olarak yüklüyoruz. Böylece bot, restoran müdürünüz kadar hakim bir tonda sorulara yanıt verir.</p>
+
+        <h2>Getir ve Yemeksepeti Komisyonlarından Kurtulmanın Yolu</h2>
+
+        <p>Üçüncü parti yemek sipariş platformları restoranlardan <strong>%15 ile %38 arasında</strong> değişen yüksek komisyonlar talep etmektedir. Kurye ve pazarlama maliyetleri de eklendiğinde restoranın kâr marjı ciddi oranda erir.</p>
+
+        <p>WhatsApp otomasyonu bu platformları tamamen kapatmanızı önermez, aksine akıllıca bir hibrit strateji sunar:</p>
+
+        <blockquote class="article-lead">
+          "Yemek sipariş platformlarını yeni müşteri kazanma kanalı olarak kullanın. Ancak bu kanaldan gelen her müşteriye teslim edilen paketin içine 'Bir sonraki siparişinizi doğrudan WhatsApp hattımızdan verin, %10 indirim kazanın' yazılı, doğrudan WhatsApp'a yönlendiren QR kodlu şık kartlar ekleyin."
+        </blockquote>
+
+        <p>Bu yöntemle, ikinci ve sonraki siparişlerde müşteri doğrudan sizin komisyonsuz kanalınıza kayar. Hem müşteri daha ucuz fiyat veya ikram kazanır hem de restoranınız yüksek komisyon maliyetinden kurtulur. <strong>Paket servis kârlılığınız doğrudan %20-30 oranında artar.</strong></p>
+
+        <h2>Yatırım ve ROI (Geri Dönüş) Analizi</h2>
+
+        <p>Ortalama günlük 60 paket servis siparişi alan, ortalama sepet tutarı 450₺ olan orta ölçekli tek şubeli bir restoran senaryosu üzerinden hesaplayalım:</p>
+
+        <ul>
+          <li>Aylık Sipariş Hacmi: 1.800 adet</li>
+          <li>Toplam Aylık Paket Cirosu: 810.000₺</li>
+          <li>Siparişlerin %30'unun komisyonlu platformlardan kendi WhatsApp botunuza kaydırılması: 540 sipariş (243.000₺ ciro)</li>
+          <li>Platform komisyon tasarrufu (Ort. %18): <strong>43.740₺/aylık net kâr artışı</strong></li>
+          <li>Telefon hatlarının meşguliyetinden kaçan ve botun anında yanıtıyla yakalanan ek siparişler (%10 artış): 180 yeni sipariş (81.000₺ ciro, ort. %30 net kâr marjıyla 24.300₺ net kâr)</li>
+          <li><strong>Toplam Aylık Finansal Kazanç: ~68.040₺</strong></li>
+        </ul>
+
+        <p>Bir restoran için bu otomasyon sisteminin kurulum yatırımı tek seferlik 20.000₺ ile 50.000₺ arasındadır. Rakamlar net bir şekilde gösteriyor ki, sistem <strong>1 ay gibi kısa bir sürede</strong> kendi kurulum maliyetini amorti etmekte ve sonraki aylarda işletmeye doğrudan ek kâr yazmaktadır.</p>
+
+        <h2>Sıkça Sorulan Sorular</h2>
+
+        <h3>Adisyon ve POS sistemimize entegre edilebilir mi?</h3>
+        <p>Evet. API desteği olan Sambapos, Mikropos, Logo gibi modern tüm adisyon sistemlerine doğrudan entegrasyon sağlıyoruz. API'si olmayan eski sistemler için n8n ile özel ara çözümler kurarak gelen siparişleri mutfak ekranına yönlendiriyoruz.</p>
+
+        <h3>Yapay zeka siparişi yanlış alabilir mi?</h3>
+        <p>Hayır. Sistem, müşterinin sepetini onaylamadan önce net bir teyit mesajı yollar ("Şu adrese şu ürünler gönderilecek, doğru mu?"). Müşteri onayladıktan sonra sipariş POS sistemine ve mutfağa düşer. Karmaşık veya çözülemeyen durumlarda otomatik olarak garsona/operatöre yönlendirme yapılır.</p>
+
+        <h3>Komisyonlu yemek sipariş platformlarını tamamen kapatmalı mıyız?</h3>
+        <p>Hayır. Yemeksepeti, Getir, Trendyol Yemek gibi platformlar yeni müşteriler edinmek için harikadır. Stratejimiz: Yeni müşteriyi bu platformlardan çekip, ilk siparişin ardından paket içine koyacağımız QR kod veya özel kartlar ile sonraki siparişleri kendi komisyonsuz WhatsApp kanalımıza yönlendirmektir.</p>
+
+        <h3>Resmi WhatsApp Business API kullanmanın avantajı nedir?</h3>
+        <p>Resmi API (Meta onaylı), numaranızın banlanma riskini sıfıra indirir. Sınırsız mesaj gönderimi sağlar, işletme profiline resmi yeşil tik alabilmenize olanak tanır ve aynı anda onlarca panelden/bireyden erişilebilir.</p>
+
+        <h3>Restoran WhatsApp sipariş botu fiyatları ne kadar?</h3>
+        <p>Restoranın şube sayısı, menü büyüklüğü ve entegrasyon yapılacak adisyon sistemine bağlı olarak kurulum ücreti 20.000₺ - 50.000₺ aralığındadır. Sonraki aylarda kullanılan API ve yapay zeka sorgu tüketim maliyetleri bulunmaktadır.</p>
+
+        <h2>Sonuç: Dijitalleşen Restoranlar Kazanıyor</h2>
+
+        <p>Telefon meşguliyetinden veya mesajların geç yanıtlanmasından dolayı kaçan her müşteri, restoranınızın büyümesini engeller. Müşterileriniz artık hızlı, yazılı ve anlık iletişim istiyor. WhatsApp sipariş botları bu beklentiyi eksiksiz karşılarken, restoranınızın operasyon yükünü minimize eder ve kârlılığını maksimize eder.</p>
+
+        <p>Dravoxai olarak restoranların çalışma akışlarına özel, adisyon entegrasyonlu yapay zeka sistemleri kuruyoruz. Restoranınızın kaçan siparişlerini kurtarmak ve kârlılığınızı artırmak için 30 dakikalık ücretsiz keşif görüşmemize hemen katılın.</p>
+
+      </article>
+
+      <!-- Share buttons -->
+      <div class="article-share">
+        <span class="article-share__label">Paylaş</span>
+        <a class="share-btn" href="https://wa.me/?text=Restoran%20WhatsApp%20Otomasyon%20Rehberi%20-%20https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://dravoxai.com/blog/restoran-whatsapp-otomasyon-rehberi&text=Restoran%20WhatsApp%20Otomasyon%20Rehberi" target="_blank" rel="noopener noreferrer">
+          Twitter / X
+        </a>
+        <button class="share-btn share-btn--copy" id="copy-link" type="button">Linki Kopyala</button>
+      </div>
+
+      <!-- Related page card -->
+      <a class="article-related" href="/sektorler/restoranlar-icin-ai">
+        <div class="article-related__text">
+          <h3>Restoranlar İçin AI — Sektör Sayfası</h3>
+          <p>Dravoxai'nin restoranlara özel AI çözümlerini, WhatsApp sipariş ve rezervasyon otomasyonunu ve ücretsiz demo seçeneğini inceleyin.</p>
+        </div>
+        <span class="cta-btn-secondary" aria-hidden="true">İncele →</span>
+      </a>
+
+      <!-- CTA card -->
+      <div class="article-cta">
+        <h2 class="article-cta__title">Restoranınızın kaçan siparişlerini <em class="gold-italic">otomasyona</em> devredin.</h2>
+        <p class="article-cta__sub">30 dakikalık ücretsiz keşif görüşmesinde restoranınızın adisyon sistemine ve akışına en uygun yapay zeka haritasını çıkarıyor, WhatsApp botunun canlı örneğini gösteriyoruz.</p>
+        <div class="article-cta__btns">
+          <a href="/sektorler/restoranlar-icin-ai" class="cta-btn-primary">Restoranlar İçin AI Sayfası →</a>
+          <a href="https://wa.me/905301139021" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">WhatsApp'tan Yaz</a>
+          <a href="tel:+905301139021" class="cta-btn-secondary">Hemen Ara</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Dravoxai. Tüm hakları saklıdır.</p>
+        <p class="footer__legal">Yapay Zeka Stüdyosu · Remote · Global</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/blog.js"></script>
+</body>
+</html>
