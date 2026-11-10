@@ -22,6 +22,7 @@ export default defineConfig({
         blogRestoran:      'blog/restoran-whatsapp-otomasyon-rehberi/index.html',
         blogSesli:         'blog/sesli-ai-nedir-n8n-giris/index.html',
         blogLead:          'blog/n8n-whatsapp-crm-lead-entegrasyonu/index.html',
+                blogKobilerIcinYapayZekaAjanlariOtomasyonRehberi2026: 'blog/kobiler-icin-yapay-zeka-ajanlari-otomasyon-rehberi-2026/index.html',
         blogPms:           'blog/otel-pms-entegrasyonlu-chatbot-rezervasyon/index.html',
         projeler:          'projeler/index.html',
         iletisim:          'iletisim/index.html',
