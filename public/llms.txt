@@ -26,6 +26,7 @@
 - [Yedek Parça ve Otomotiv İçin Parça Bulma AI](https://dravoxai.com/sektorler/yedek-parca-icin-ai)
 
 ## Bilgi Bankası ve Kılavuzlar (Blog)
+- [Şirket Santrallerinde Sesli Yapay Zeka: Çağrı Karşılama Maliyetlerini %70 Düşürme Rehberi](https://dravoxai.com/blog/santrallerde-sesli-yapay-zeka-cagri-merkezi-maliyet-dusurme)
 - [KOBİ'ler İçin Yapay Zeka Ajanları: 2026 Otomasyon Rehberi](https://dravoxai.com/blog/kobiler-icin-yapay-zeka-ajanlari-otomasyon-rehberi-2026)
 - [n8n ile WhatsApp ve CRM Lead Entegrasyonu Nasıl Yapılır?](https://dravoxai.com/blog/n8n-whatsapp-crm-lead-entegrasyonu)
 - [Sesli Yapay Zeka Nedir? n8n ile Sesli AI Asistan Kurulum Rehberi](https://dravoxai.com/blog/sesli-ai-nedir-n8n-giris)
